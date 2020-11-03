@@ -36,7 +36,7 @@ namespace DuckHunt
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             sprite = Content.Load<Texture2D>("Riffle");
-            spritePosition = new Vector2(0, 0);
+            spritePosition = new Vector2(275, 390);
 
             // TODO: use this.Content to load your game content here
         }
@@ -65,7 +65,8 @@ namespace DuckHunt
 
             spriteBatch.Begin();
 
-            spriteBatch.Draw(sprite, spritePosition, Color.White);
+            spriteBatch.Draw(sprite, spritePosition, null, Color.White, 0f, Vector2.Zero, 0.2f, SpriteEffects.None, 0f);
+            
 
             spriteBatch.End();
 
