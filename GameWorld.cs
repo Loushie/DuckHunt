@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
 namespace DuckHunt
 {
@@ -8,6 +9,9 @@ namespace DuckHunt
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+        private Texture2D sprite;
+        private Rectangle rectangle;
+        private List<GameObject> gameObjects;
 
         public Game1()
         {
