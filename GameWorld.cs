@@ -15,7 +15,10 @@ namespace DuckHunt
         private List<GameObject> gameObjects;
         private Vector2 distance;
         public Vector2 spritePosition;
+        private Vector2 spriteOrigin;
         private float rotation;
+        public Rectangle spriteRectangle;
+        private Vector2 spriteVelocity;
 
         public GameWorld()
         {
@@ -36,7 +39,7 @@ namespace DuckHunt
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             sprite = Content.Load<Texture2D>("Riffle");
-            spritePosition = new Vector2(275, 390);
+            spritePosition = new Vector2(350, 500);
 
             // TODO: use this.Content to load your game content here
         }
@@ -54,6 +57,19 @@ namespace DuckHunt
 
             rotation = (float)Math.Atan2(distance.Y, distance.X);
 
+
+            /*
+             * 
+             * Vector2 direction = spritePosition - spriteOrigin;
+            direction.Normalize();
+            float rotationInRadians = (float)Math.Atan2((double)direction.Y,
+                                         (double)direction.X) + MathHelper.PiOver2;
+
+
+             spriteRectangle = new Rectangle((int)spritePosition.X, (int)spritePosition.Y, sprite.Width, sprite.Height);
+            spritePosition = spriteVelocity + spritePosition;
+            spriteOrigin = new Vector2(spriteRectangle.Width / 2, spriteRectangle.Height / 2);
+            */
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -65,8 +81,7 @@ namespace DuckHunt
 
             spriteBatch.Begin();
 
-            spriteBatch.Draw(sprite, spritePosition, null, Color.White, 0f, Vector2.Zero, 0.2f, SpriteEffects.None, 0f);
-            
+            spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
 
             spriteBatch.End();
 

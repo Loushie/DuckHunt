@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DuckHunt
 {
-    class Player
+    class Player : GameObject
     {
         private Texture2D Sprite;
 
