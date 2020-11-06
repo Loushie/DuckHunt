@@ -1,19 +1,23 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 using System.Collections.Generic;
 
 namespace DuckHunt
 {
-    public class Game1 : Game
+    public class GameWorld : Game
     {
         private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
+        private SpriteBatch spriteBatch;
         private Texture2D sprite;
         private Rectangle rectangle;
         private List<GameObject> gameObjects;
+        private Vector2 distance;
+        public Vector2 spritePosition;
+        private float rotation;
 
-        public Game1()
+        public GameWorld()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
@@ -29,7 +33,10 @@ namespace DuckHunt
 
         protected override void LoadContent()
         {
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
+            spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            sprite = Content.Load<Texture2D>("Riffle");
+            spritePosition = new Vector2(0, 0);
 
             // TODO: use this.Content to load your game content here
         }
@@ -39,6 +46,14 @@ namespace DuckHunt
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            MouseState mouse = Mouse.GetState();
+            IsMouseVisible = true;
+
+            distance.X = mouse.X - spritePosition.X;
+            distance.Y = mouse.Y - spritePosition.Y;
+
+            rotation = (float)Math.Atan2(distance.Y, distance.X);
+
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -47,6 +62,12 @@ namespace DuckHunt
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(sprite, spritePosition, Color.White);
+
+            spriteBatch.End();
 
             // TODO: Add your drawing code here
 
