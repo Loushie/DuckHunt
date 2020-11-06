@@ -19,6 +19,9 @@ namespace DuckHunt
         private float rotation;
         public Rectangle spriteRectangle;
         private Vector2 spriteVelocity;
+        public int score;
+        public Vector2 scorePosition;
+        private SpriteFont scoreFont;
 
         public GameWorld()
         {
@@ -29,6 +32,12 @@ namespace DuckHunt
 
         protected override void Initialize()
         {
+            //sets score to 0 when game is started
+            int score = 0;
+            scorePosition.X = 10;
+            scorePosition.Y = 10;
+
+
             // TODO: Add your initialization logic here
 
             base.Initialize();
@@ -36,6 +45,10 @@ namespace DuckHunt
 
         protected override void LoadContent()
         {
+            //loading a font to use for the score
+            scoreFont = Content.Load<SpriteFont>("scoreFont");
+
+            //loading the correct sprite and giving it a position
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             sprite = Content.Load<Texture2D>("Riffle");
@@ -48,15 +61,25 @@ namespace DuckHunt
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-
+            //taking the location of the mouse
             MouseState mouse = Mouse.GetState();
             IsMouseVisible = true;
 
+            //using the location of the mouse to rotate the sprite
             distance.X = mouse.X - spritePosition.X;
             distance.Y = mouse.Y - spritePosition.Y;
 
             rotation = (float)Math.Atan2(distance.Y, distance.X);
 
+            // ckeck to see if target is hit
+
+
+            // add to score
+
+            if (mouse.X > 350)
+            {
+                score += 1;
+            }
 
             /*
              * 
@@ -74,7 +97,10 @@ namespace DuckHunt
 
             base.Update(gameTime);
         }
-
+        /// <summary>
+        /// this is the part that draws all the elements on the screen
+        /// </summary>
+        /// <param name="gameTime"></param>
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
@@ -82,6 +108,7 @@ namespace DuckHunt
             spriteBatch.Begin();
 
             spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
+            spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
 
             spriteBatch.End();
 
