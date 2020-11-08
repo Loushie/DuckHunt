@@ -63,7 +63,6 @@ namespace DuckHunt
                 Exit();
             //taking the location of the mouse
             MouseState mouse = Mouse.GetState();
-            IsMouseVisible = true;
 
             //using the location of the mouse to rotate the sprite
             distance.X = mouse.X - spritePosition.X;
