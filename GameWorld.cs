@@ -25,6 +25,8 @@ namespace DuckHunt
         private Texture2D cursorTex;
         private Vector2 cursorPos;
 
+        public static Vector2 Screensize { get; internal set; }
+
         public GameWorld()
         {
             _graphics = new GraphicsDeviceManager(this);

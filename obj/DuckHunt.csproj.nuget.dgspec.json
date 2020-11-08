@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\olese\\Documents\\GitHub\\DuckHunt\\DuckHunt.csproj": {}
+    "C:\\Users\\samia\\OneDrive\\1 år\\repos\\DuckHunt\\DuckHunt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\olese\\Documents\\GitHub\\DuckHunt\\DuckHunt.csproj": {
+    "C:\\Users\\samia\\OneDrive\\1 år\\repos\\DuckHunt\\DuckHunt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\olese\\Documents\\GitHub\\DuckHunt\\DuckHunt.csproj",
+        "projectUniqueName": "C:\\Users\\samia\\OneDrive\\1 år\\repos\\DuckHunt\\DuckHunt.csproj",
         "projectName": "DuckHunt",
-        "projectPath": "C:\\Users\\olese\\Documents\\GitHub\\DuckHunt\\DuckHunt.csproj",
-        "packagesPath": "C:\\Users\\olese\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\olese\\Documents\\GitHub\\DuckHunt\\obj\\",
+        "projectPath": "C:\\Users\\samia\\OneDrive\\1 år\\repos\\DuckHunt\\DuckHunt.csproj",
+        "packagesPath": "C:\\Users\\samia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samia\\OneDrive\\1 år\\repos\\DuckHunt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\olese\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
