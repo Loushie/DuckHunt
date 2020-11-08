@@ -6,6 +6,5 @@ namespace DuckHunt
 {
     class Score
     {
-
     }
 }

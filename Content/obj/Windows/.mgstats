@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/olese/source/repos/DuckHunt/DuckHunt/Content/CollisionTexture.png","C:/Users/olese/source/repos/DuckHunt/DuckHunt/Content/bin/Windows/CollisionTexture.xnb","TextureProcessor","Texture2DContent",2804,485,0,1344633
+"C:/Users/olese/source/repos/DuckHunt/DuckHunt/Content/Target.png","C:/Users/olese/source/repos/DuckHunt/DuckHunt/Content/bin/Windows/Target.xnb","TextureProcessor","Texture2DContent",2687,74069,0,0114048
