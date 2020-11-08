@@ -152,7 +152,7 @@ namespace DuckHunt
 
             spriteBatch.Begin();
 
-            spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
+            spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 2f);
             spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
             spriteBatch.Draw(cursorTex, cursorPos, Color.White);
 
