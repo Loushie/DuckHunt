@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DuckHunt
 {
-    class GameObject : GameWorld
+    class GameObject
     {
         private Texture2D Sprite;
         private Vector2 position;
