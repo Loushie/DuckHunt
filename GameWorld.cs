@@ -22,12 +22,14 @@ namespace DuckHunt
         public int score;
         public Vector2 scorePosition;
         private SpriteFont scoreFont;
+        private Texture2D cursorTex;
+        private Vector2 cursorPos;
 
         public GameWorld()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            IsMouseVisible = true;
+            IsMouseVisible = false;
         }
 
         protected override void Initialize()
@@ -47,7 +49,6 @@ namespace DuckHunt
         {
             //loading a font to use for the score
             scoreFont = Content.Load<SpriteFont>("scoreFont");
-
             //loading the correct sprite and giving it a position
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
@@ -55,6 +56,9 @@ namespace DuckHunt
             spritePosition = new Vector2(350, 500);
 
             // TODO: use this.Content to load your game content here
+
+            cursorTex = Content.Load<Texture2D>("Cursor");
+
         }
 
         protected override void Update(GameTime gameTime)
@@ -63,7 +67,6 @@ namespace DuckHunt
                 Exit();
             //taking the location of the mouse
             MouseState mouse = Mouse.GetState();
-            IsMouseVisible = true;
 
             //using the location of the mouse to rotate the sprite
             distance.X = mouse.X - spritePosition.X;
@@ -72,7 +75,7 @@ namespace DuckHunt
             rotation = (float)Math.Atan2(distance.Y, distance.X);
 
             // ckeck to see if target is hit
-
+            
 
             // add to score
 
@@ -95,6 +98,11 @@ namespace DuckHunt
             */
             // TODO: Add your update logic here
 
+            MouseState mouseState = Mouse.GetState();
+            cursorPos = new Vector2(mouseState.X - 32, mouseState.Y - 32);
+
+
+
             base.Update(gameTime);
         }
         /// <summary>
@@ -109,7 +117,7 @@ namespace DuckHunt
 
             spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
             spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
-
+            spriteBatch.Draw(cursorTex, cursorPos, Color.White);
             spriteBatch.End();
 
             // TODO: Add your drawing code here
