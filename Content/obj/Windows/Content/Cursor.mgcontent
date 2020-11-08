@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/olese/Documents/GitHub/DuckHunt/Content/Cursor.png</SourceFile>
-  <SourceTime>2020-11-08T22:56:01.1136597+01:00</SourceTime>
+  <SourceTime>2020-11-08T23:57:23.3303184+01:00</SourceTime>
   <DestFile>C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Windows/Content/Cursor.xnb</DestFile>
-  <DestTime>2020-11-08T23:03:21.9877057+01:00</DestTime>
+  <DestTime>2020-11-08T23:57:24.2630518+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
