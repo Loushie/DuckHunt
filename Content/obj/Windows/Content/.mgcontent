@@ -4,11 +4,11 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/CollisionTexture.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/Cursor.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/Riffle.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/scoreFont.spritefont</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/Target.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/CollisionTexture.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Cursor.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Riffle.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/scoreFont.spritefont</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Target.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
