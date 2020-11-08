@@ -39,8 +39,6 @@ C:\Users\olese\source\repos\DuckHunt\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.g
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\Cursor.xnb
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\Riffle.xnb
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\scoreFont.xnb
-C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\CollisionTexture.xnb
-C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target.xnb
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\DuckHunt.exe
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\DuckHunt.deps.json
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\DuckHunt.runtimeconfig.json
@@ -77,3 +75,5 @@ C:\Users\olese\Documents\GitHub\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.csproj
 C:\Users\olese\Documents\GitHub\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.dll
 C:\Users\olese\Documents\GitHub\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.pdb
 C:\Users\olese\Documents\GitHub\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.genruntimeconfig.cache
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\CollisionTexture.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target.xnb
