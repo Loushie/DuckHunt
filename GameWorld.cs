@@ -1,7 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
 using System.Collections.Generic;
 
 namespace DuckHunt
@@ -9,13 +8,14 @@ namespace DuckHunt
     public class GameWorld : Game
     {
         private GraphicsDeviceManager _graphics;
-        private SpriteBatch spriteBatch;
-        private Texture2D sprite;
-        private Rectangle rectangle;
+        private SpriteBatch _spriteBatch;
         private List<GameObject> gameObjects;
-        private Vector2 distance;
-        public Vector2 spritePosition;
-        private float rotation;
+        private static List<GameObject> newObjects;
+        private static List<GameObject> deleteObjects;
+        private static Vector2 screensize;
+        private Texture2D collisionTexture;
+
+        public static Vector2 Screensize { get => screensize; set => screensize = value; }
 
         public GameWorld()
         {
@@ -26,6 +26,10 @@ namespace DuckHunt
 
         protected override void Initialize()
         {
+            gameObjects = new List<GameObject>();
+            newObjects = new List<GameObject>();
+            deleteObjects = new List<GameObject>();
+            gameObjects.Add(new Target());
             // TODO: Add your initialization logic here
 
             base.Initialize();
@@ -33,11 +37,14 @@ namespace DuckHunt
 
         protected override void LoadContent()
         {
-            spriteBatch = new SpriteBatch(GraphicsDevice);
+            _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            sprite = Content.Load<Texture2D>("Riffle");
-            spritePosition = new Vector2(0, 0);
+            collisionTexture = Content.Load<Texture2D>("CollisionTexture");
 
+            foreach (GameObject go in gameObjects)
+            {
+                go.LoadContent(this.Content);
+            }
             // TODO: use this.Content to load your game content here
         }
 
@@ -46,13 +53,24 @@ namespace DuckHunt
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            MouseState mouse = Mouse.GetState();
-            IsMouseVisible = true;
+            gameObjects.AddRange(newObjects);
+            newObjects.Clear();
 
-            distance.X = mouse.X - spritePosition.X;
-            distance.Y = mouse.Y - spritePosition.Y;
+            foreach (GameObject go in gameObjects)
+            {
+                go.Update(gameTime);
 
-            rotation = (float)Math.Atan2(distance.Y, distance.X);
+                foreach (GameObject other in gameObjects)
+                {
+                    go.CheckCollision(other);
+                }
+            }
+
+            foreach (GameObject go in deleteObjects)
+            {
+                gameObjects.Remove(go);
+            }
+            deleteObjects.Clear();
 
             // TODO: Add your update logic here
 
@@ -62,16 +80,47 @@ namespace DuckHunt
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            _spriteBatch.Begin();
 
-            spriteBatch.Begin();
+            foreach (GameObject go in gameObjects)
+            {
+                go.Draw(_spriteBatch);
 
-            spriteBatch.Draw(sprite, spritePosition, Color.White);
+#if DEBUG
+                DrawCollisionBox(go);
+#endif
 
-            spriteBatch.End();
+            }
+
+            _spriteBatch.End();
 
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
+        }
+
+        private void DrawCollisionBox(GameObject go)
+        {
+
+            Rectangle topLine = new Rectangle(go.Collision.X, go.Collision.Y, go.Collision.Width, 1);
+            Rectangle bottomLine = new Rectangle(go.Collision.X, go.Collision.Y + go.Collision.Height, go.Collision.Width, 1);
+            Rectangle rightLine = new Rectangle(go.Collision.X + go.Collision.Width, go.Collision.Y, 1, go.Collision.Height);
+            Rectangle leftLine = new Rectangle(go.Collision.X, go.Collision.Y, 1, go.Collision.Height);
+
+            _spriteBatch.Draw(collisionTexture, topLine, Color.Red);
+            _spriteBatch.Draw(collisionTexture, bottomLine, Color.Red);
+            _spriteBatch.Draw(collisionTexture, rightLine, Color.Red);
+            _spriteBatch.Draw(collisionTexture, leftLine, Color.Red);
+        }
+
+        public static void Instantiate(GameObject go)
+        {
+            newObjects.Add(go);
+        }
+
+        public static void Destroy(GameObject go)
+        {
+            deleteObjects.Add(go);
         }
     }
 }
