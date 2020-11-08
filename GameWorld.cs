@@ -24,6 +24,12 @@ namespace DuckHunt
         private SpriteFont scoreFont;
         private Texture2D cursorTex;
         private Vector2 cursorPos;
+        private static Vector2 screensize;
+        private static List<GameObject> newObjects;
+        private static List<GameObject> deleteObjects;
+        private Texture2D collisionTexture;
+
+        public static Vector2 Screensize { get => screensize; set => screensize = value; }
 
         public GameWorld()
         {
@@ -38,6 +44,11 @@ namespace DuckHunt
             int score = 0;
             scorePosition.X = 10;
             scorePosition.Y = 10;
+
+            gameObjects = new List<GameObject>();
+            newObjects = new List<GameObject>();
+            deleteObjects = new List<GameObject>();
+            gameObjects.Add(new Target());
 
 
             // TODO: Add your initialization logic here
@@ -58,6 +69,13 @@ namespace DuckHunt
             // TODO: use this.Content to load your game content here
 
             cursorTex = Content.Load<Texture2D>("Cursor");
+
+            collisionTexture = Content.Load<Texture2D>("CollisionTexture");
+
+            foreach (GameObject go in gameObjects)
+            {
+                go.LoadContent(this.Content);
+            }
 
         }
 
@@ -101,6 +119,25 @@ namespace DuckHunt
             MouseState mouseState = Mouse.GetState();
             cursorPos = new Vector2(mouseState.X - 32, mouseState.Y - 32);
 
+            gameObjects.AddRange(newObjects);
+            newObjects.Clear();
+
+            foreach (GameObject go in gameObjects)
+            {
+                go.Update(gameTime);
+
+                foreach (GameObject other in gameObjects)
+                {
+                    go.CheckCollision(other);
+                }
+            }
+
+            foreach (GameObject go in deleteObjects)
+            {
+                gameObjects.Remove(go);
+            }
+            deleteObjects.Clear();
+
 
 
             base.Update(gameTime);
@@ -118,11 +155,46 @@ namespace DuckHunt
             spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
             spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
             spriteBatch.Draw(cursorTex, cursorPos, Color.White);
+
+            foreach (GameObject go in gameObjects)
+            {
+                go.Draw(spriteBatch);
+
+                DrawCollisionBox(go);
+
+            }
+
             spriteBatch.End();
+
+
 
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
+        }
+
+        private void DrawCollisionBox(GameObject go)
+        {
+
+            Rectangle topLine = new Rectangle(go.Collision.X, go.Collision.Y, go.Collision.Width, 1);
+            Rectangle bottomLine = new Rectangle(go.Collision.X, go.Collision.Y + go.Collision.Height, go.Collision.Width, 1);
+            Rectangle rightLine = new Rectangle(go.Collision.X + go.Collision.Width, go.Collision.Y, 1, go.Collision.Height);
+            Rectangle leftLine = new Rectangle(go.Collision.X, go.Collision.Y, 1, go.Collision.Height);
+
+            spriteBatch.Draw(collisionTexture, topLine, Color.Red);
+            spriteBatch.Draw(collisionTexture, bottomLine, Color.Red);
+            spriteBatch.Draw(collisionTexture, rightLine, Color.Red);
+            spriteBatch.Draw(collisionTexture, leftLine, Color.Red);
+        }
+
+        public static void Instantiate(GameObject go)
+        {
+            newObjects.Add(go);
+        }
+
+        public static void Destroy(GameObject go)
+        {
+            deleteObjects.Add(go);
         }
     }
 }

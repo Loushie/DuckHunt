@@ -1,0 +1,6 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/CollisionTexture.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/CollisionTexture.xnb","TextureProcessor","Texture2DContent",2804,485,0,1329151
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/Cursor.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Cursor.xnb","TextureProcessor","Texture2DContent",138,16469,0,0145336
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/Riffle.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Riffle.xnb","TextureProcessor","Texture2DContent",102191,3276885,0,1577857
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/scoreFont.spritefont","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/scoreFont.xnb","FontDescriptionProcessor","SpriteFontContent",2008,21538,0,1101006
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/Target.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Target.xnb","TextureProcessor","Texture2DContent",2687,74069,0,0125375
