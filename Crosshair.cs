@@ -42,7 +42,6 @@ namespace DuckHunt
         public void HandleInput()
         {
             velocity = Vector2.Zero;
-            KeyboardState keyState = Keyboard.GetState();
             MouseState state = Mouse.GetState();
 
             if (state.LeftButton == ButtonState.Pressed & canFire)

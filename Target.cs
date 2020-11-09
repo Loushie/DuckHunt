@@ -9,6 +9,7 @@ namespace DuckHunt
 {
     class Target : GameObject
     {
+        public int score;
         private Random random;
         public int dead;
         public int outOfBounds;
@@ -67,6 +68,7 @@ namespace DuckHunt
         {
             if (other is Bullet)
             {
+                score++;
                 GameWorld.Destroy(other);
                 dead += 1;
                 Respawn();
