@@ -14,3 +14,4 @@ bin/Debug/netcoreapp3.1/DuckHunt.dll
 *.txt
 *.dll
 *.props
+obj/project.nuget.cache
