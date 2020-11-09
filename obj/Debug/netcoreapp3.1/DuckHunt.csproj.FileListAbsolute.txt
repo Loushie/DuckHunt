@@ -88,12 +88,6 @@ C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\DuckHunt.ru
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\DuckHunt.runtimeconfig.dev.json
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\DuckHunt.dll
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\DuckHunt.pdb
-C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.csprojAssemblyReference.cache
-C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.AssemblyInfoInputs.cache
-C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.AssemblyInfo.cs
-C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.dll
-C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.pdb
-C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.genruntimeconfig.cache
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
@@ -116,5 +110,11 @@ C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\runtimes\rh
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\runtimes\win7-arm\native\libuv.dll
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.csprojAssemblyReference.cache
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.AssemblyInfoInputs.cache
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.AssemblyInfo.cs
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.csproj.CoreCompileInputs.cache
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.csproj.CopyComplete
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.dll
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.pdb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.genruntimeconfig.cache

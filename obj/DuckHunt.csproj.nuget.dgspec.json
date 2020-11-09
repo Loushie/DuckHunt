@@ -49,10 +49,6 @@
             "MonoGame.Framework.WindowsDX": {
               "target": "Package",
               "version": "[3.8.0.1641, )"
-            },
-            "SharpDX.Direct3D11": {
-              "target": "Package",
-              "version": "[4.2.0, )"
             }
           },
           "imports": [
