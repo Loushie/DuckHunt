@@ -3,12 +3,15 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using System.Collections.Generic;
 
 namespace DuckHunt
 {
     class Target : GameObject
     {
         private Random random;
+        public int dead;
+        public int outOfBounds;
         //private SoundEffectInstance effect;
 
         public Target()
@@ -39,6 +42,7 @@ namespace DuckHunt
 
             if (position.X > GameWorld.Screensize.X)
             {
+                outOfBounds += 1;
                 Respawn();
             }
         }
@@ -57,14 +61,22 @@ namespace DuckHunt
 
         }
 
+        
+
         public override void OnCollision(GameObject other)
         {
             if (other is Bullet)
             {
                 GameWorld.Destroy(other);
+                dead += 1;
                 Respawn();
             }
         }
+
+        
+
+
+
     }
 
 }

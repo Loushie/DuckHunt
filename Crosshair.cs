@@ -52,7 +52,7 @@ namespace DuckHunt
                 GameWorld.Instantiate(new Bullet(laser, new Vector2(position.X + spawnOffset.X, position.Y + spawnOffset.Y)));
             }
 
-            if (!canFire && fireTrigger < 50)
+            if (!canFire && fireTrigger < 5)
             {
                 fireTrigger++;
             }

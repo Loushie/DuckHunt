@@ -167,3 +167,11 @@ C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\laserGr
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target1.xnb
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target2.xnb
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target3.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\1Cursor.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\2Cursor.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\3Cursor.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\4Cursor.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\laserGreen03.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target1.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target2.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target3.xnb
