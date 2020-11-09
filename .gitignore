@@ -21,3 +21,7 @@ obj/Debug/netcoreapp3.1/DuckHunt.csprojAssemblyReference.cache
 *.pdb
 *.pdb
 .vs/DuckHunt/v16/.suo
+Content/obj/Windows/Content/.mgstats
+*.mgcontent
+*.mgcontent
+*.mgcontent
