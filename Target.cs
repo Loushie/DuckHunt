@@ -34,7 +34,7 @@ namespace DuckHunt
         {
             Move(gametime);
 
-            if (position.Y > GameWorld.Screensize.Y)
+            if (position.X < GameWorld.Screensize.X)
             {
                 Respawn();
             }
@@ -45,13 +45,11 @@ namespace DuckHunt
             int index = random.Next(0, 1);
             sprite = sprites[index];
 
-            velocity = new Vector2(0, 1);
-            speed = random.Next(10, 10);
-            //position.X = random.Next(0, (int)GameWorld.Screensize.X - sprite.Width);
-            position.X = random.Next(0, 10);
-            position.Y = 30;
-
-
+            velocity = new Vector2(1, 0);
+            speed = random.Next(50, 500);
+            position.Y = random.Next(0, (int)GameWorld.Screensize.Y + sprite.Height);
+            position.X = 30;
+                        
         }
 
         public override void OnCollision(GameObject Cursor)
