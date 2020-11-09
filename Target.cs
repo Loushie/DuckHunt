@@ -8,6 +8,7 @@ namespace DuckHunt
 {
     class Target : GameObject
     {
+        public int score;
         private Random random;
         //private SoundEffectInstance effect;
 
@@ -61,6 +62,7 @@ namespace DuckHunt
         {
             if (other is Bullet)
             {
+                score++;
                 GameWorld.Destroy(other);
                 Respawn();
             }

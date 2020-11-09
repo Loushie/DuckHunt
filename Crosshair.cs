@@ -42,7 +42,6 @@ namespace DuckHunt
         public void HandleInput()
         {
             velocity = Vector2.Zero;
-            KeyboardState keyState = Keyboard.GetState();
             MouseState state = Mouse.GetState();
 
             if (state.LeftButton == ButtonState.Pressed & canFire)
@@ -52,7 +51,7 @@ namespace DuckHunt
                 GameWorld.Instantiate(new Bullet(laser, new Vector2(position.X + spawnOffset.X, position.Y + spawnOffset.Y)));
             }
 
-            if (!canFire && fireTrigger < 50)
+            if (!canFire && fireTrigger < 5)
             {
                 fireTrigger++;
             }
