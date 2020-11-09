@@ -1,7 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 
 namespace DuckHunt
@@ -36,6 +38,8 @@ namespace DuckHunt
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = false;
+
+            screensize = new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
         }
 
         protected override void Initialize()
@@ -49,6 +53,7 @@ namespace DuckHunt
             newObjects = new List<GameObject>();
             deleteObjects = new List<GameObject>();
             gameObjects.Add(new Target());
+            gameObjects.Add(new Crosshair());
 
 
             // TODO: Add your initialization logic here
@@ -68,7 +73,7 @@ namespace DuckHunt
 
             // TODO: use this.Content to load your game content here
 
-            cursorTex = Content.Load<Texture2D>("Cursor");
+            //cursorTex = Content.Load<Texture2D>("Cursor");
 
             collisionTexture = Content.Load<Texture2D>("CollisionTexture");
 
@@ -154,7 +159,7 @@ namespace DuckHunt
 
             spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
             spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
-            spriteBatch.Draw(cursorTex, cursorPos, Color.White);
+            //spriteBatch.Draw(cursorTex, cursorPos, Color.White);
             foreach (GameObject go in gameObjects)
             {
                 go.Draw(spriteBatch);

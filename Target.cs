@@ -9,8 +9,7 @@ namespace DuckHunt
     class Target : GameObject
     {
         private Random random;
-        private bool isHovered;
-        private bool isClicked;
+        //private SoundEffectInstance effect;
 
         public Target()
         {
@@ -21,10 +20,14 @@ namespace DuckHunt
 
         public override void LoadContent(ContentManager content)
         {
-            sprites = new Texture2D[1];
+            sprites = new Texture2D[4];
 
             sprites[0] = content.Load<Texture2D>("Target");
-            
+            sprites[1] = content.Load<Texture2D>("Target1");
+            sprites[2] = content.Load<Texture2D>("Target2");
+            sprites[3] = content.Load<Texture2D>("Target3");
+
+            //effect = content.Load<SoundEffect>("SFX_Powerup_01").CreateInstance();
 
             Respawn();
 
@@ -34,7 +37,7 @@ namespace DuckHunt
         {
             Move(gametime);
 
-            if (position.X < GameWorld.Screensize.X)
+            if (position.X > GameWorld.Screensize.X)
             {
                 Respawn();
             }
@@ -42,23 +45,26 @@ namespace DuckHunt
 
         public void Respawn()
         {
-            int index = random.Next(0, 1);
+            int index = random.Next(0, 4);
             sprite = sprites[index];
 
             velocity = new Vector2(1, 0);
-            speed = random.Next(50, 50);
-            position.Y = random.Next(0, (int)GameWorld.Screensize.Y + sprite.Height);
-            position.X = 30;
-                        
+            speed = random.Next(10, 100);
+            position.Y = random.Next(30, 150);
+            position.X = 0;
+
+            //effect.Play();
+
         }
 
-        public override void OnCollision(GameObject Cursor)
+        public override void OnCollision(GameObject other)
         {
-
+            if (other is Bullet)
+            {
+                GameWorld.Destroy(other);
+                Respawn();
+            }
         }
-        
-            
-        
     }
 
 }
