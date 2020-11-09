@@ -51,28 +51,18 @@ namespace DuckHunt
             speed = random.Next(10, 10);
             //position.X = random.Next(0, (int)GameWorld.Screensize.X - sprite.Width);
             position.X = random.Next(0, 10);
-            position.Y = 0;
+            position.Y = 30;
 
 
         }
 
-        public override void OnCollision(GameObject other)
+        public override void OnCollision(GameObject Cursor)
         {
-            var mouseState = Mouse.GetState();
-            var mousePoint = new Point(mouseState.X, mouseState.Y);
-            var rectangle = new Rectangle(mousePoint.X, mousePoint.Y, this.sprite.Width, this.sprite.Height);
 
-            if (rectangle.Contains(mousePoint))
-            {
-                isHovered = true;
-                isClicked = mouseState.LeftButton == ButtonState.Pressed;
-            }
-            else
-            {
-                isHovered = false;
-                isClicked = false;
-            }
         }
+        
+            
+        
     }
 
 }
