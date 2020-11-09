@@ -159,3 +159,4 @@ C:\Users\lau\Desktop\git\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.csproj.CopyCo
 C:\Users\lau\Desktop\git\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.dll
 C:\Users\lau\Desktop\git\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.pdb
 C:\Users\lau\Desktop\git\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.genruntimeconfig.cache
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\2dField.xnb

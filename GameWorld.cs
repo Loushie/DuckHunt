@@ -15,6 +15,7 @@ namespace DuckHunt
         private List<GameObject> gameObjects;
         private Vector2 distance;
         public Vector2 spritePosition;
+        private Texture2D backgroundTexture;
         private Vector2 spriteOrigin;
         private float rotation;
         public Rectangle spriteRectangle;
@@ -65,6 +66,8 @@ namespace DuckHunt
 
             sprite = Content.Load<Texture2D>("Riffle");
             spritePosition = new Vector2(350, 500);
+
+            backgroundTexture = Content.Load<Texture2D>("2dField");
 
             // TODO: use this.Content to load your game content here
 
@@ -152,6 +155,7 @@ namespace DuckHunt
 
             spriteBatch.Begin();
 
+            spriteBatch.Draw(backgroundTexture, new Vector2(0, 0), Color.White);
             spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
             spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
             spriteBatch.Draw(cursorTex, cursorPos, Color.White);

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Profile>Reach</Profile>
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/CollisionTexture.png</File>
-    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/Cursor.png</File>
-    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/Riffle.png</File>
-    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/scoreFont.spritefont</File>
-    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/Target.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/2dField.jpg</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/CollisionTexture.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Cursor.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Riffle.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/scoreFont.spritefont</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Target.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -1,6 +1,1 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/lau/Desktop/git/DuckHunt/Content/CollisionTexture.png","C:/Users/lau/Desktop/git/DuckHunt/Content/bin/Windows/Content/CollisionTexture.xnb","TextureProcessor","Texture2DContent",2804,485,0,2629872
-"C:/Users/lau/Desktop/git/DuckHunt/Content/Cursor.png","C:/Users/lau/Desktop/git/DuckHunt/Content/bin/Windows/Content/Cursor.xnb","TextureProcessor","Texture2DContent",138,16469,0,008988
-"C:/Users/lau/Desktop/git/DuckHunt/Content/Riffle.png","C:/Users/lau/Desktop/git/DuckHunt/Content/bin/Windows/Content/Riffle.xnb","TextureProcessor","Texture2DContent",102191,3276885,0,1353804
-"C:/Users/lau/Desktop/git/DuckHunt/Content/scoreFont.spritefont","C:/Users/lau/Desktop/git/DuckHunt/Content/bin/Windows/Content/scoreFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0,1458098
-"C:/Users/lau/Desktop/git/DuckHunt/Content/Target.png","C:/Users/lau/Desktop/git/DuckHunt/Content/bin/Windows/Content/Target.xnb","TextureProcessor","Texture2DContent",2687,74069,0,0044387

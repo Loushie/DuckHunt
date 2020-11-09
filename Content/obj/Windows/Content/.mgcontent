@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/2dField.jpg</File>
     <File>C:/Users/lau/Desktop/git/DuckHunt/Content/CollisionTexture.png</File>
     <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Cursor.png</File>
     <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Riffle.png</File>
@@ -11,6 +12,7 @@
     <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Target.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
