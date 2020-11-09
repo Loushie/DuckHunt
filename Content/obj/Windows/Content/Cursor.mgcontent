@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/Cursor.png</SourceFile>
-  <SourceTime>2020-11-08T23:49:41.4871903+01:00</SourceTime>
-  <DestFile>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/Windows/Content/Cursor.xnb</DestFile>
-  <DestTime>2020-11-08T23:53:55.2488263+01:00</DestTime>
+  <SourceFile>C:/Users/olese/Documents/GitHub/DuckHunt/Content/Cursor.png</SourceFile>
+  <SourceTime>2020-11-09T22:22:23.5832536+01:00</SourceTime>
+  <DestFile>C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Windows/Content/Cursor.xnb</DestFile>
+  <DestTime>2020-11-09T22:22:24.4854789+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
