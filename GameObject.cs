@@ -46,7 +46,7 @@ namespace DuckHunt
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(sprite, position, null, color, 0, origin, 1, SpriteEffects.None, 0);
+            spriteBatch.Draw(sprite, position, null, color, 0, origin, (float)1, SpriteEffects.None, (float)0.1);
 
 
         }

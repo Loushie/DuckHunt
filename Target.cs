@@ -46,7 +46,7 @@ namespace DuckHunt
             sprite = sprites[index];
 
             velocity = new Vector2(1, 0);
-            speed = random.Next(50, 500);
+            speed = random.Next(50, 50);
             position.Y = random.Next(0, (int)GameWorld.Screensize.Y + sprite.Height);
             position.X = 30;
                         
