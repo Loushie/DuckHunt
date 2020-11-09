@@ -9,7 +9,7 @@ namespace DuckHunt
     public class GameWorld : Game
     {
         private GraphicsDeviceManager _graphics;
-        private SpriteBatch spriteBatch;
+        public SpriteBatch spriteBatch;
         private Texture2D sprite;
         private Rectangle rectangle;
         private List<GameObject> gameObjects;
@@ -115,9 +115,9 @@ namespace DuckHunt
             spriteOrigin = new Vector2(spriteRectangle.Width / 2, spriteRectangle.Height / 2);
             */
             // TODO: Add your update logic here
-
             MouseState mouseState = Mouse.GetState();
             cursorPos = new Vector2(mouseState.X - 32, mouseState.Y - 32);
+
 
             gameObjects.AddRange(newObjects);
             newObjects.Clear();
@@ -152,10 +152,9 @@ namespace DuckHunt
 
             spriteBatch.Begin();
 
-            spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 2f);
+            spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
             spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
             spriteBatch.Draw(cursorTex, cursorPos, Color.White);
-
             foreach (GameObject go in gameObjects)
             {
                 go.Draw(spriteBatch);
