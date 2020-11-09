@@ -17,3 +17,6 @@ bin/Debug/netcoreapp3.1/DuckHunt.dll
 obj/project.nuget.cache
 .vs/DuckHunt/v16/.suo
 obj/Debug/netcoreapp3.1/DuckHunt.csprojAssemblyReference.cache
+.vs/DuckHunt/v16/.suo
+*.pdb
+*.pdb
