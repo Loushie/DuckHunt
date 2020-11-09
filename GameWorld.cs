@@ -41,7 +41,7 @@ namespace DuckHunt
         protected override void Initialize()
         {
             //sets score to 0 when game is started
-            int score = 0;
+            score = 0;
             scorePosition.X = 10;
             scorePosition.Y = 10;
 
