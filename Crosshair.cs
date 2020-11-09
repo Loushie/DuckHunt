@@ -14,18 +14,16 @@ namespace DuckHunt
         private Texture2D laser;
         private bool canFire;
         private int fireTrigger;
-        //private SoundEffectInstance effect;
+
+        
 
 
         public Crosshair()
         {
-            //speed = 150;
-            //velocity = Vector2.Zero;
-            //fps = 10;
-            //color = Color.White;
             canFire = true;
             fireTrigger = 0;
-            //spawnOffset = new Vector2(-25, -105);
+            color = Color.White;
+
         }
 
         public override void Update(GameTime gametime)
@@ -36,7 +34,7 @@ namespace DuckHunt
 
             HandleInput();
             Move(gametime);
-            //Animate(gametime);
+            Animate(gametime);
             ScreenWarp();
             ScreenLimits();
         }
@@ -68,6 +66,7 @@ namespace DuckHunt
             {
                 velocity.Normalize();
             }
+
         }
 
 
@@ -119,7 +118,8 @@ namespace DuckHunt
         {
             if (other is Target)
             {
-                color = Color.Green;
+                
+                
             }
         }
 
