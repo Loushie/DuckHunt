@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/CollisionTexture.png</SourceFile>
-  <SourceTime>2020-11-08T23:53:15.5246077+01:00</SourceTime>
-  <DestFile>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/Windows/Content/CollisionTexture.xnb</DestFile>
-  <DestTime>2020-11-09T03:08:13.5131816+01:00</DestTime>
+  <SourceFile>C:/Users/lau/Desktop/git/DuckHunt/Content/CollisionTexture.png</SourceFile>
+  <SourceTime>2020-11-09T00:15:48.6274018+01:00</SourceTime>
+  <DestFile>C:/Users/lau/Desktop/git/DuckHunt/Content/bin/Windows/Content/CollisionTexture.xnb</DestFile>
+  <DestTime>2020-11-09T03:14:42.8454617+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
