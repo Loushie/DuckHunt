@@ -33,7 +33,7 @@ namespace DuckHunt
             }
 
             sprite = sprites[0];
-            //collision box Crosshair
+            //draws collision box Crosshair
             this.position = new Vector2(GameWorld.GetScreensize().X / 2, GameWorld.GetScreensize().Y - sprite.Height / 2);
             this.origin = new Vector2(sprite.Height / 2, sprite.Width / 2);
             this.offset.X = (-sprite.Width / 2);

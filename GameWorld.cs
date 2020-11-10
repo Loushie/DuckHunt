@@ -26,7 +26,7 @@ namespace DuckHunt
         public int score;
         public Vector2 scorePosition;
         private SpriteFont scoreFont;
-        private Texture2D cursorTex;
+        
         private Vector2 cursorPos;
         private static Vector2 screensize;
         private static List<GameObject> newObjects;
