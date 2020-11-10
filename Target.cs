@@ -27,9 +27,7 @@ namespace DuckHunt
 
         public override void LoadContent(ContentManager content)
         {
-
-            death = content.Load<SoundEffect>("DeathMoan").CreateInstance();
-            death.Play();
+                      
 
             sprites = new Texture2D[4];
 
@@ -38,7 +36,8 @@ namespace DuckHunt
             sprites[2] = content.Load<Texture2D>("Target2");
             sprites[3] = content.Load<Texture2D>("Target3");
 
-            //effect = content.Load<SoundEffect>("SFX_Powerup_01").CreateInstance();
+            death = content.Load<SoundEffect>("DeathMoan").CreateInstance();
+            death.Play();
 
             Respawn();
 
@@ -64,8 +63,6 @@ namespace DuckHunt
             speed = random.Next(10, 100);
             position.Y = random.Next(30, 150);
             position.X = 0;
-
-            //effect.Play();
 
         }
 

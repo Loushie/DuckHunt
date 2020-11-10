@@ -83,7 +83,7 @@ namespace DuckHunt
 
             this.position = new Vector2(GameWorld.GetScreensize().X / 2, GameWorld.GetScreensize().Y - sprite.Height / 2);
             this.origin = new Vector2(sprite.Height / 2, sprite.Width / 2);
-            this.offset.X = (-sprite.Width / 2) - 20;
+            this.offset.X = (-sprite.Width / 2);
             this.offset.Y = -sprite.Height / 2;
 
             laser = content.Load<Texture2D>("laserGreen03");
