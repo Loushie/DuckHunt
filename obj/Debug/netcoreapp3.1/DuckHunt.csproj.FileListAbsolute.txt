@@ -185,3 +185,6 @@ C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\Tar
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target3.xnb
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\Bang.xnb
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\DeathMoan.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\2dField.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\Bang.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\DeathMoan.xnb

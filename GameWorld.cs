@@ -14,6 +14,7 @@ namespace DuckHunt
         private GraphicsDeviceManager _graphics;
         public SpriteBatch spriteBatch;
         private Texture2D sprite;
+        private Texture2D backgroundTexture;
         private Rectangle rectangle;
         private List<GameObject> gameObjects;
         private Vector2 distance;
@@ -86,6 +87,8 @@ namespace DuckHunt
 
             gunShoot = Content.Load<SoundEffect>("Bang").CreateInstance();
             gunShoot.Play();
+
+            backgroundTexture = Content.Load<Texture2D>("2dField");
 
             
 
@@ -179,7 +182,13 @@ namespace DuckHunt
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(backgroundTexture, new Vector2(0, 0), Color.White);
+            spriteBatch.End();
+
             spriteBatch.Begin(SpriteSortMode.BackToFront);
+
 
             spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
             spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
