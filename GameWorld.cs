@@ -183,7 +183,6 @@ namespace DuckHunt
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
-
             spriteBatch.Draw(backgroundTexture, new Vector2(0, 0), Color.White);
             spriteBatch.End();
 
@@ -191,7 +190,6 @@ namespace DuckHunt
 
             spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
             spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
-            //spriteBatch.Draw(cursorTex, cursorPos, Color.White);
             foreach (GameObject go in gameObjects)
             {
                 go.Draw(spriteBatch);

@@ -60,8 +60,10 @@ namespace DuckHunt
             sprite = sprites[index];
 
             velocity = new Vector2(1, 0);
-            speed = random.Next(10, 100);
-            position.Y = random.Next(30, 150);
+            //random speed from left to right
+            speed = random.Next(100, 500);
+            //spawn positions on y axis
+            position.Y = random.Next(30, 250);
             position.X = 0;
 
         }
