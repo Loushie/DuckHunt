@@ -121,14 +121,6 @@ namespace DuckHunt
 
             // ckeck to see if target is hit
 
-
-            // add to score
-
-            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
-            {
-                score++;
-            }
-
             /*
              * 
              * Vector2 direction = spritePosition - spriteOrigin;
@@ -167,6 +159,7 @@ namespace DuckHunt
             foreach (GameObject go in deleteObjects)
             {
                 gameObjects.Remove(go);
+                score++;
             }
             deleteObjects.Clear();
 
