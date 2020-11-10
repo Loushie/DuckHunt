@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -13,6 +14,8 @@ namespace DuckHunt
         private Random random;
         public int dead;
         public int outOfBounds;
+        public SoundEffectInstance death;
+
         //private SoundEffectInstance effect;
 
         public Target()
@@ -24,6 +27,10 @@ namespace DuckHunt
 
         public override void LoadContent(ContentManager content)
         {
+
+            death = content.Load<SoundEffect>("DeathMoan").CreateInstance();
+            death.Play();
+
             sprites = new Texture2D[4];
 
             sprites[0] = content.Load<Texture2D>("Target");
@@ -41,7 +48,7 @@ namespace DuckHunt
         {
             Move(gametime);
 
-            if (position.X > GameWorld.Screensize.X)
+            if (position.X > GameWorld.GetScreensize().X)
             {
                 outOfBounds += 1;
                 Respawn();
@@ -71,6 +78,7 @@ namespace DuckHunt
                 score++;
                 GameWorld.Destroy(other);
                 dead += 1;
+                death.Play();
                 Respawn();
             }
         }

@@ -1,13 +1,15 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/1Cursor.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/1Cursor.xnb","TextureProcessor","Texture2DContent",138,16469,0,1192353
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/2Cursor.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/2Cursor.xnb","TextureProcessor","Texture2DContent",138,16469,0,0098647
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/3Cursor.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/3Cursor.xnb","TextureProcessor","Texture2DContent",138,16469,0,0095997
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/4Cursor.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/4Cursor.xnb","TextureProcessor","Texture2DContent",138,16469,0,0097871
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/CollisionTexture.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/CollisionTexture.xnb","TextureProcessor","Texture2DContent",2804,485,0,0060974
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/laserGreen03.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/laserGreen03.xnb","TextureProcessor","Texture2DContent",284,2137,0,006886
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/Riffle.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Riffle.xnb","TextureProcessor","Texture2DContent",102191,3276885,0,0989757
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/scoreFont.spritefont","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/scoreFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0,0801998
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/Target.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Target.xnb","TextureProcessor","Texture2DContent",2687,74069,0,0108395
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/Target1.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Target1.xnb","TextureProcessor","Texture2DContent",2479,65621,0,0114028
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/Target2.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Target2.xnb","TextureProcessor","Texture2DContent",2694,74069,0,0106042
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/Target3.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Target3.xnb","TextureProcessor","Texture2DContent",2479,65621,0,0107431
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/1Cursor.png","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/1Cursor.xnb","TextureProcessor","Texture2DContent",138,16469,0,1553035
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/2Cursor.png","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/2Cursor.xnb","TextureProcessor","Texture2DContent",138,16469,0,016786
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/3Cursor.png","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/3Cursor.xnb","TextureProcessor","Texture2DContent",138,16469,0,017272
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/4Cursor.png","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/4Cursor.xnb","TextureProcessor","Texture2DContent",138,16469,0,0177792
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/Bang.wav","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/Bang.xnb","SoundEffectProcessor","SoundEffectContent",73772,73833,0,1923053
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/CollisionTexture.png","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/CollisionTexture.xnb","TextureProcessor","Texture2DContent",2804,485,0,0077522
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/DeathMoan.wav","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/DeathMoan.xnb","SoundEffectProcessor","SoundEffectContent",88108,88169,0,1892594
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/laserGreen03.png","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/laserGreen03.xnb","TextureProcessor","Texture2DContent",284,2137,0,009004
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/Riffle.png","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/Riffle.xnb","TextureProcessor","Texture2DContent",102191,3276885,0,1469691
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/scoreFont.spritefont","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/scoreFont.xnb","FontDescriptionProcessor","SpriteFontContent",2008,21538,0,1342778
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/Target.png","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/Target.xnb","TextureProcessor","Texture2DContent",2687,74069,0,0220058
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/Target1.png","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/Target1.xnb","TextureProcessor","Texture2DContent",2479,65621,0,0240882
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/Target2.png","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/Target2.xnb","TextureProcessor","Texture2DContent",2694,74069,0,0203874
+"C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/Target3.png","C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/Target3.xnb","TextureProcessor","Texture2DContent",2479,65621,0,0201227

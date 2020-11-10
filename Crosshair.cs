@@ -81,7 +81,7 @@ namespace DuckHunt
 
             sprite = sprites[0];
 
-            this.position = new Vector2(GameWorld.Screensize.X / 2, GameWorld.Screensize.Y - sprite.Height / 2);
+            this.position = new Vector2(GameWorld.GetScreensize().X / 2, GameWorld.GetScreensize().Y - sprite.Height / 2);
             this.origin = new Vector2(sprite.Height / 2, sprite.Width / 2);
             this.offset.X = (-sprite.Width / 2) - 20;
             this.offset.Y = -sprite.Height / 2;
@@ -91,13 +91,13 @@ namespace DuckHunt
 
         private void ScreenWarp()
         {
-            if (position.X > GameWorld.Screensize.X + sprite.Width)
+            if (position.X > GameWorld.GetScreensize().X + sprite.Width)
             {
                 position.X = -sprite.Width;
             }
             else if (position.X < -sprite.Width)
             {
-                position.X = GameWorld.Screensize.X + sprite.Width;
+                position.X = GameWorld.GetScreensize().X + sprite.Width;
             }
         }
 
@@ -107,9 +107,9 @@ namespace DuckHunt
             {
                 position.Y = sprite.Height / 2;
             }
-            else if (position.Y > GameWorld.Screensize.Y)
+            else if (position.Y > GameWorld.GetScreensize().Y)
             {
-                position.Y = GameWorld.Screensize.Y;
+                position.Y = GameWorld.GetScreensize().Y;
             }
         }
 

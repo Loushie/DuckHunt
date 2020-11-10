@@ -61,6 +61,12 @@
 /processorParam:TextureFormat=Color
 /build:4Cursor.png
 
+#begin Bang.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Bang.wav
+
 #begin CollisionTexture.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -72,6 +78,12 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:CollisionTexture.png
+
+#begin DeathMoan.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:DeathMoan.wav
 
 #begin laserGreen03.png
 /importer:TextureImporter

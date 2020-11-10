@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
@@ -30,8 +31,18 @@ namespace DuckHunt
         private static List<GameObject> newObjects;
         private static List<GameObject> deleteObjects;
         private Texture2D collisionTexture;
+        private SoundEffectInstance gunShoot;
 
-        public static Vector2 Screensize { get => screensize; set => screensize = value; }
+
+        public static Vector2 GetScreensize()
+        {
+            return screensize;
+        }
+
+        public static void SetScreensize(Vector2 value)
+        {
+            screensize = value;
+        }
 
         public static Vector2 Screensize { get; internal set; }
 
@@ -73,6 +84,11 @@ namespace DuckHunt
             sprite = Content.Load<Texture2D>("Riffle");
             spritePosition = new Vector2(350, 500);
 
+            gunShoot = Content.Load<SoundEffect>("Bang").CreateInstance();
+            gunShoot.Play();
+
+            
+
             // TODO: use this.Content to load your game content here
 
             //cursorTex = Content.Load<Texture2D>("Cursor");
@@ -83,6 +99,7 @@ namespace DuckHunt
             {
                 go.LoadContent(this.Content);
             }
+
 
         }
 
@@ -125,6 +142,11 @@ namespace DuckHunt
             MouseState mouseState = Mouse.GetState();
             cursorPos = new Vector2(mouseState.X - 32, mouseState.Y - 32);
 
+            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
+            {
+                gunShoot.Play();
+            }
+            
 
             gameObjects.AddRange(newObjects);
             newObjects.Clear();
