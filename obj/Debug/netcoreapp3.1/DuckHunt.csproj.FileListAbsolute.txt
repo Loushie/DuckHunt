@@ -188,3 +188,7 @@ C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\Dea
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\Bang.xnb
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\DeathMoan.xnb
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\2dField.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetBlue.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetGreen.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetOrange.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetRed.xnb

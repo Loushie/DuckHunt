@@ -31,10 +31,10 @@ namespace DuckHunt
 
             sprites = new Texture2D[4];
 
-            sprites[0] = content.Load<Texture2D>("Target");
-            sprites[1] = content.Load<Texture2D>("Target1");
-            sprites[2] = content.Load<Texture2D>("Target2");
-            sprites[3] = content.Load<Texture2D>("Target3");
+            sprites[0] = content.Load<Texture2D>("TargetGreen");
+            sprites[1] = content.Load<Texture2D>("TargetBlue");
+            sprites[2] = content.Load<Texture2D>("TargetRed");
+            sprites[3] = content.Load<Texture2D>("TargetOrange");
 
             death = content.Load<SoundEffect>("DeathMoan").CreateInstance();
             death.Play();
