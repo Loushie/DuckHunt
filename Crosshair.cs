@@ -15,9 +15,6 @@ namespace DuckHunt
         private bool canFire;
         private int fireTrigger;
 
-        
-
-
         public Crosshair()
         {
             canFire = true;
@@ -28,7 +25,6 @@ namespace DuckHunt
 
         public override void LoadContent(ContentManager content)
         {
-            //effect = content.Load<SoundEffect>("8bit_bomb_explosion").CreateInstance();
             sprites = new Texture2D[1];
 
             for (int i = 0; i < sprites.Length; i++)
@@ -37,7 +33,7 @@ namespace DuckHunt
             }
 
             sprite = sprites[0];
-
+            //collision box Crosshair
             this.position = new Vector2(GameWorld.GetScreensize().X / 2, GameWorld.GetScreensize().Y - sprite.Height / 2);
             this.origin = new Vector2(sprite.Height / 2, sprite.Width / 2);
             this.offset.X = (-sprite.Width / 2);
@@ -55,8 +51,6 @@ namespace DuckHunt
             HandleInput();
             Move(gametime);
             Animate(gametime);
-            ScreenWarp();
-            ScreenLimits();
         }
 
 
@@ -67,14 +61,15 @@ namespace DuckHunt
             velocity = Vector2.Zero;
             MouseState state = Mouse.GetState();
 
+            //shootfunction
+
             if (state.LeftButton == ButtonState.Pressed & canFire)
             {
-                //effect.Play();
-                canFire = false;
+               canFire = false;
                 GameWorld.Instantiate(new Bullet(laser, new Vector2(position.X + spawnOffset.X, position.Y + spawnOffset.Y)));
             }
-
-            if (!canFire && fireTrigger < 5)
+            //Firespeed cooldown
+            if (!canFire && fireTrigger < 25)
             {
                 fireTrigger++;
             }
@@ -89,33 +84,6 @@ namespace DuckHunt
                 velocity.Normalize();
             }
 
-        }
-
-
-        
-
-        private void ScreenWarp()
-        {
-            if (position.X > GameWorld.GetScreensize().X + sprite.Width)
-            {
-                position.X = -sprite.Width;
-            }
-            else if (position.X < -sprite.Width)
-            {
-                position.X = GameWorld.GetScreensize().X + sprite.Width;
-            }
-        }
-
-        private void ScreenLimits()
-        {
-            if (position.Y - sprite.Height / 2 < 0)
-            {
-                position.Y = sprite.Height / 2;
-            }
-            else if (position.Y > GameWorld.GetScreensize().Y)
-            {
-                position.Y = GameWorld.GetScreensize().Y;
-            }
         }
 
         public override void OnCollision(GameObject other)
