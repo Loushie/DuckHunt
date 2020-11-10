@@ -1,7 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 
 namespace DuckHunt
@@ -15,7 +18,6 @@ namespace DuckHunt
         private List<GameObject> gameObjects;
         private Vector2 distance;
         public Vector2 spritePosition;
-        private Texture2D backgroundTexture;
         private Vector2 spriteOrigin;
         private float rotation;
         public Rectangle spriteRectangle;
@@ -29,14 +31,28 @@ namespace DuckHunt
         private static List<GameObject> newObjects;
         private static List<GameObject> deleteObjects;
         private Texture2D collisionTexture;
+        private SoundEffectInstance gunShoot;
 
-        public static Vector2 Screensize { get => screensize; set => screensize = value; }
+
+        public static Vector2 GetScreensize()
+        {
+            return screensize;
+        }
+
+        public static void SetScreensize(Vector2 value)
+        {
+            screensize = value;
+        }
+
+        public static Vector2 Screensize { get; internal set; }
 
         public GameWorld()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = false;
+
+            screensize = new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
         }
 
         protected override void Initialize()
@@ -50,6 +66,7 @@ namespace DuckHunt
             newObjects = new List<GameObject>();
             deleteObjects = new List<GameObject>();
             gameObjects.Add(new Target());
+            gameObjects.Add(new Crosshair());
 
 
             // TODO: Add your initialization logic here
@@ -67,11 +84,14 @@ namespace DuckHunt
             sprite = Content.Load<Texture2D>("Riffle");
             spritePosition = new Vector2(350, 500);
 
-            backgroundTexture = Content.Load<Texture2D>("2dField");
+            gunShoot = Content.Load<SoundEffect>("Bang").CreateInstance();
+            gunShoot.Play();
+
+            
 
             // TODO: use this.Content to load your game content here
 
-            cursorTex = Content.Load<Texture2D>("Cursor");
+            //cursorTex = Content.Load<Texture2D>("Cursor");
 
             collisionTexture = Content.Load<Texture2D>("CollisionTexture");
 
@@ -79,6 +99,7 @@ namespace DuckHunt
             {
                 go.LoadContent(this.Content);
             }
+
 
         }
 
@@ -121,6 +142,11 @@ namespace DuckHunt
             MouseState mouseState = Mouse.GetState();
             cursorPos = new Vector2(mouseState.X - 32, mouseState.Y - 32);
 
+            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
+            {
+                gunShoot.Play();
+            }
+            
 
             gameObjects.AddRange(newObjects);
             newObjects.Clear();
@@ -153,12 +179,11 @@ namespace DuckHunt
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            spriteBatch.Begin();
+            spriteBatch.Begin(SpriteSortMode.BackToFront);
 
-            spriteBatch.Draw(backgroundTexture, new Vector2(0, 0), Color.White);
             spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
             spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
-            spriteBatch.Draw(cursorTex, cursorPos, Color.White);
+            //spriteBatch.Draw(cursorTex, cursorPos, Color.White);
             foreach (GameObject go in gameObjects)
             {
                 go.Draw(spriteBatch);

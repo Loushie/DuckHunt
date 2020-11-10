@@ -1,16 +1,22 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using System.Collections.Generic;
 
 namespace DuckHunt
 {
     class Target : GameObject
     {
+        public int score;
         private Random random;
-        private bool isHovered;
-        private bool isClicked;
+        public int dead;
+        public int outOfBounds;
+        public SoundEffectInstance death;
+
+        //private SoundEffectInstance effect;
 
         public Target()
         {
@@ -21,10 +27,18 @@ namespace DuckHunt
 
         public override void LoadContent(ContentManager content)
         {
-            sprites = new Texture2D[1];
+
+            death = content.Load<SoundEffect>("DeathMoan").CreateInstance();
+            death.Play();
+
+            sprites = new Texture2D[4];
 
             sprites[0] = content.Load<Texture2D>("Target");
-            
+            sprites[1] = content.Load<Texture2D>("Target1");
+            sprites[2] = content.Load<Texture2D>("Target2");
+            sprites[3] = content.Load<Texture2D>("Target3");
+
+            //effect = content.Load<SoundEffect>("SFX_Powerup_01").CreateInstance();
 
             Respawn();
 
@@ -34,33 +48,45 @@ namespace DuckHunt
         {
             Move(gametime);
 
-            if (position.Y > GameWorld.Screensize.Y)
+            if (position.X > GameWorld.GetScreensize().X)
             {
+                outOfBounds += 1;
                 Respawn();
             }
         }
 
         public void Respawn()
         {
-            int index = random.Next(0, 1);
+            int index = random.Next(0, 4);
             sprite = sprites[index];
 
-            velocity = new Vector2(0, 1);
-            speed = random.Next(10, 10);
-            //position.X = random.Next(0, (int)GameWorld.Screensize.X - sprite.Width);
-            position.X = random.Next(0, 10);
-            position.Y = 30;
+            velocity = new Vector2(1, 0);
+            speed = random.Next(10, 100);
+            position.Y = random.Next(30, 150);
+            position.X = 0;
 
+            //effect.Play();
 
         }
 
-        public override void OnCollision(GameObject Cursor)
+        
+
+        public override void OnCollision(GameObject other)
         {
-
+            if (other is Bullet)
+            {
+                score++;
+                GameWorld.Destroy(other);
+                dead += 1;
+                death.Play();
+                Respawn();
+            }
         }
+
         
-            
-        
+
+
+
     }
 
 }

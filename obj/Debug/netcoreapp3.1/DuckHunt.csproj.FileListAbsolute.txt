@@ -159,4 +159,29 @@ C:\Users\lau\Desktop\git\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.csproj.CopyCo
 C:\Users\lau\Desktop\git\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.dll
 C:\Users\lau\Desktop\git\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.pdb
 C:\Users\lau\Desktop\git\DuckHunt\obj\Debug\netcoreapp3.1\DuckHunt.genruntimeconfig.cache
-C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\2dField.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\1Cursor.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\2Cursor.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\3Cursor.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\4Cursor.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\laserGreen03.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target1.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target2.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target3.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\1Cursor.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\2Cursor.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\3Cursor.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\4Cursor.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\laserGreen03.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target1.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target2.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target3.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\1Cursor.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\2Cursor.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\3Cursor.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\4Cursor.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\laserGreen03.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target1.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target2.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\Target3.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\Bang.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\DeathMoan.xnb

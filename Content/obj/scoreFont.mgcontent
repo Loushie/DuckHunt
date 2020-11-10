@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/lau/Desktop/git/DuckHunt/Content/scoreFont.spritefont</SourceFile>
-  <SourceTime>2020-11-08T23:49:05.962118+01:00</SourceTime>
-  <DestFile>C:/Users/lau/Desktop/git/DuckHunt/Content/bin/scoreFont.xnb</DestFile>
-  <DestTime>2020-11-09T14:24:02.1027429+01:00</DestTime>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/scoreFont.spritefont</SourceFile>
+  <SourceTime>2020-08-10T16:17:28+02:00</SourceTime>
+  <DestFile>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/bin/scoreFont.xnb</DestFile>
+  <DestTime>2020-11-10T01:02:03.7093797+01:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
-  <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
+  <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
-  <ProcessorTime>2018-12-08T17:35:54+01:00</ProcessorTime>
+  <ProcessorTime>2020-08-10T16:17:54+02:00</ProcessorTime>
   <Parameters>
     <Key>PremultiplyAlpha</Key>
     <Value>True</Value>

@@ -20,29 +20,29 @@ namespace DuckHunt
         protected Vector2 velocity;
         protected Vector2 offset;
         protected Color color;
-
-
+        private SpriteFont scoreFont;
 
         public Color GetColor
-            {
-                get { return color; }
-                set { color = value; }
-
-            }
-
+        {
+            get { return color; }
+            set { color = value; }
+        }
         public Rectangle Collision
         {
             get
             {
                 return new Rectangle(
-                    (int)(position.X + offset.X),
-                    (int)(position.Y + offset.Y),
-                    sprite.Width,
-                    sprite.Height
-                    );
-
+                       (int)(position.X + offset.X),
+                       (int)(position.Y + offset.Y),
+                       sprite.Width,
+                       sprite.Height
+                   );
             }
         }
+
+
+        public abstract void LoadContent(ContentManager content);
+
 
         public void Draw(SpriteBatch spriteBatch)
         {
@@ -51,13 +51,22 @@ namespace DuckHunt
 
         }
 
-
-        public abstract void LoadContent(ContentManager content);
-
-            
-
         public abstract void Update(GameTime gametime);
 
+
+        protected void Animate(GameTime gametime)
+        {
+            timeElapsed += (float)gametime.ElapsedGameTime.TotalSeconds;
+
+            currentIndex = (int)(timeElapsed * fps);
+            sprite = sprites[currentIndex];
+
+            if (currentIndex >= sprites.Length - 1)
+            {
+                timeElapsed = 0;
+                currentIndex = 0;
+            }
+        }
         protected void Move(GameTime gameTime)
         {
             float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -73,7 +82,6 @@ namespace DuckHunt
                 OnCollision(other);
             }
         }
-
 
     }
 }
