@@ -26,6 +26,26 @@ namespace DuckHunt
 
         }
 
+        public override void LoadContent(ContentManager content)
+        {
+            //effect = content.Load<SoundEffect>("8bit_bomb_explosion").CreateInstance();
+            sprites = new Texture2D[1];
+
+            for (int i = 0; i < sprites.Length; i++)
+            {
+                sprites[i] = content.Load<Texture2D>("1Cursor");
+            }
+
+            sprite = sprites[0];
+
+            this.position = new Vector2(GameWorld.GetScreensize().X / 2, GameWorld.GetScreensize().Y - sprite.Height / 2);
+            this.origin = new Vector2(sprite.Height / 2, sprite.Width / 2);
+            this.offset.X = (-sprite.Width / 2);
+            this.offset.Y = -sprite.Height / 2;
+
+            laser = content.Load<Texture2D>("laserGreen03");
+        }
+
         public override void Update(GameTime gametime)
         {
             MouseState mouseState = Mouse.GetState();
@@ -38,6 +58,9 @@ namespace DuckHunt
             ScreenWarp();
             ScreenLimits();
         }
+
+
+
 
         public void HandleInput()
         {
@@ -69,25 +92,7 @@ namespace DuckHunt
         }
 
 
-        public override void LoadContent(ContentManager content)
-        {
-            //effect = content.Load<SoundEffect>("8bit_bomb_explosion").CreateInstance();
-            sprites = new Texture2D[4];
-
-            for (int i = 0; i < sprites.Length; i++)
-            {
-                sprites[i] = content.Load<Texture2D>((i + 1) + "Cursor");
-            }
-
-            sprite = sprites[0];
-
-            this.position = new Vector2(GameWorld.GetScreensize().X / 2, GameWorld.GetScreensize().Y - sprite.Height / 2);
-            this.origin = new Vector2(sprite.Height / 2, sprite.Width / 2);
-            this.offset.X = (-sprite.Width / 2);
-            this.offset.Y = -sprite.Height / 2;
-
-            laser = content.Load<Texture2D>("laserGreen03");
-        }
+        
 
         private void ScreenWarp()
         {

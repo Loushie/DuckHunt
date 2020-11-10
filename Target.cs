@@ -15,7 +15,7 @@ namespace DuckHunt
         public int dead;
         public int outOfBounds;
         public SoundEffectInstance death;
-
+        
         //private SoundEffectInstance effect;
 
         public Target()

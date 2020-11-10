@@ -47,8 +47,7 @@ namespace DuckHunt
         public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(sprite, position, null, color, 0, origin, 1, SpriteEffects.None, 0);
-
-
+            
         }
 
         public abstract void Update(GameTime gametime);

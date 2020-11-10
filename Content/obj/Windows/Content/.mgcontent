@@ -5,9 +5,6 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/1Cursor.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/2Cursor.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/3Cursor.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/4Cursor.png</File>
     <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/Bang.wav</File>
     <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/CollisionTexture.png</File>
     <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/DeathMoan.wav</File>
@@ -20,9 +17,6 @@
     <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/Target3.png</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
