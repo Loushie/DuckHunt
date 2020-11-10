@@ -192,3 +192,10 @@ C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetB
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetGreen.xnb
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetOrange.xnb
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetRed.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\Bang.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\DeathMoan.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\2dField.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetBlue.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetGreen.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetOrange.xnb
+C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetRed.xnb

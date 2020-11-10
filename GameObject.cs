@@ -20,7 +20,6 @@ namespace DuckHunt
         protected Vector2 velocity;
         protected Vector2 offset;
         protected Color color;
-        private SpriteFont scoreFont;
 
         public Color GetColor
         {

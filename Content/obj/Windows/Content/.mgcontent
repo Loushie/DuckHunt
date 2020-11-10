@@ -4,18 +4,18 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/1Cursor.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/2dField.jpg</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/Bang.wav</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/CollisionTexture.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/DeathMoan.wav</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/laserGreen03.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/Riffle.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/scoreFont.spritefont</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/TargetBlue.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/TargetGreen.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/TargetOrange.png</File>
-    <File>C:/Users/olese/Documents/GitHub/DuckHunt/Content/TargetRed.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/1Cursor.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/2dField.jpg</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Bang.wav</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/CollisionTexture.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/DeathMoan.wav</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/laserGreen03.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Riffle.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/scoreFont.spritefont</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/TargetBlue.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/TargetGreen.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/TargetOrange.png</File>
+    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/TargetRed.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

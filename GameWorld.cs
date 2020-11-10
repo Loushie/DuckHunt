@@ -15,19 +15,15 @@ namespace DuckHunt
         public SpriteBatch spriteBatch;
         private Texture2D sprite;
         private Texture2D backgroundTexture;
-        private Rectangle rectangle;
         private List<GameObject> gameObjects;
         private Vector2 distance;
         public Vector2 spritePosition;
-        private Vector2 spriteOrigin;
         private float rotation;
         public Rectangle spriteRectangle;
-        private Vector2 spriteVelocity;
         public int score;
         public Vector2 scorePosition;
         private SpriteFont scoreFont;
         
-        private Vector2 cursorPos;
         private static Vector2 screensize;
         private static List<GameObject> newObjects;
         private static List<GameObject> deleteObjects;
@@ -143,7 +139,6 @@ namespace DuckHunt
             */
             // TODO: Add your update logic here
             MouseState mouseState = Mouse.GetState();
-            cursorPos = new Vector2(mouseState.X - 32, mouseState.Y - 32);
 
             if (Mouse.GetState().LeftButton == ButtonState.Pressed)
             {

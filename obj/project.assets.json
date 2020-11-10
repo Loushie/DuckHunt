@@ -7373,25 +7373,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\olese\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\lau\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\olese\\Documents\\GitHub\\DuckHunt\\DuckHunt.csproj",
+      "projectUniqueName": "C:\\Users\\lau\\Desktop\\git\\DuckHunt\\DuckHunt.csproj",
       "projectName": "DuckHunt",
-      "projectPath": "C:\\Users\\olese\\Documents\\GitHub\\DuckHunt\\DuckHunt.csproj",
-      "packagesPath": "C:\\Users\\olese\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\olese\\Documents\\GitHub\\DuckHunt\\obj\\",
+      "projectPath": "C:\\Users\\lau\\Desktop\\git\\DuckHunt\\DuckHunt.csproj",
+      "packagesPath": "C:\\Users\\lau\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lau\\Desktop\\git\\DuckHunt\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\olese\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\lau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -7433,6 +7432,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.2, 3.1.2]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -7441,7 +7446,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
