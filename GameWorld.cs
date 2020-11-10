@@ -14,6 +14,7 @@ namespace DuckHunt
         private GraphicsDeviceManager _graphics;
         public SpriteBatch spriteBatch;
         private Texture2D sprite;
+        private Texture2D backgroundTexture;
         private Rectangle rectangle;
         private List<GameObject> gameObjects;
         private Vector2 distance;
@@ -76,6 +77,8 @@ namespace DuckHunt
 
         protected override void LoadContent()
         {
+
+            backgroundTexture = Content.Load<Texture2D>("2dField");
             //loading a font to use for the score
             scoreFont = Content.Load<SpriteFont>("scoreFont");
             //loading the correct sprite and giving it a position
@@ -117,13 +120,13 @@ namespace DuckHunt
             rotation = (float)Math.Atan2(distance.Y, distance.X);
 
             // ckeck to see if target is hit
-            
+
 
             // add to score
 
-            if (mouse.X > 350)
+            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
             {
-                score += 1;
+                score++;
             }
 
             /*
@@ -178,6 +181,11 @@ namespace DuckHunt
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(backgroundTexture, new Vector2(0, 0), Color.White);
+            spriteBatch.End();
 
             spriteBatch.Begin(SpriteSortMode.BackToFront);
 

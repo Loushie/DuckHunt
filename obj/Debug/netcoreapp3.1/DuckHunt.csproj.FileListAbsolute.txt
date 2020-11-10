@@ -187,3 +187,4 @@ C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\Ban
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\DeathMoan.xnb
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\Bang.xnb
 C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\DeathMoan.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\2dField.xnb
