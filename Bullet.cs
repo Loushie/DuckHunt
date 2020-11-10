@@ -30,11 +30,6 @@ namespace DuckHunt
         public override void Update(GameTime gametime)
         {
             Move(gametime);
-
-            if (position.Y < 0)
-            {
-                GameWorld.Destroy(this);
-            }
         }
     }
 }
