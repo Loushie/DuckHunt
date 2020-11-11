@@ -37,8 +37,6 @@ namespace DuckHunt
             return screensize;
         }
 
-        public static Vector2 Screensize { get; internal set; }
-
         public GameWorld()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -109,28 +107,8 @@ namespace DuckHunt
 
             rotation = (float)Math.Atan2(distance.Y, distance.X);
 
-            // ckeck to see if target is hit
-
-            /*
-             * 
-             * Vector2 direction = spritePosition - spriteOrigin;
-            direction.Normalize();
-            float rotationInRadians = (float)Math.Atan2((double)direction.Y,
-                                         (double)direction.X) + MathHelper.PiOver2;
-
-
-             spriteRectangle = new Rectangle((int)spritePosition.X, (int)spritePosition.Y, sprite.Width, sprite.Height);
-            spritePosition = spriteVelocity + spritePosition;
-            spriteOrigin = new Vector2(spriteRectangle.Width / 2, spriteRectangle.Height / 2);
-            */
-            // TODO: Add your update logic here
-
             MouseState mouseState = Mouse.GetState();
             KeyboardState state = Keyboard.GetState();
-
-
-            
-
 
             gameObjects.AddRange(newObjects);
             newObjects.Clear();
@@ -144,14 +122,14 @@ namespace DuckHunt
                     go.CheckCollision(other);
                 }
             }
-
+            //every target in deletedobjects list counts +1 point
             foreach (GameObject go in deleteObjects)
             {
                 gameObjects.Remove(go);
-                score+= 10;
+                score+= 1;
             }
             deleteObjects.Clear();
-
+            //if the player has 1 or more points and press enter, the game restarts
             if (state.IsKeyDown(Keys.Enter) && score > 1)
             {
                 Initialize();
@@ -166,7 +144,7 @@ namespace DuckHunt
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
+            //background is drawn before everything else to make sure it is in the back layer
             spriteBatch.Begin();
             spriteBatch.Draw(backgroundTexture, new Vector2(0, 0), Color.White);
             spriteBatch.End();
