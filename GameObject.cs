@@ -38,7 +38,7 @@ namespace DuckHunt
 
         public abstract void LoadContent(ContentManager content);
 
-        //drawing the sprites
+
         public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(sprite, position, null, color, 0, origin, 1, SpriteEffects.None, 1f);
@@ -47,7 +47,6 @@ namespace DuckHunt
 
         public abstract void Update(GameTime gametime);
 
-        //gives the targets the ability to move on the screen
         protected void Move(GameTime gameTime)
         {
             float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -56,7 +55,6 @@ namespace DuckHunt
 
         public abstract void OnCollision(GameObject other);
 
-        //checks if the collision boxes colide
         public void CheckCollision(GameObject other)
         {
             if (Collision.Intersects(other.Collision))

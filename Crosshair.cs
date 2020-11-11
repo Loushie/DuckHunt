@@ -12,7 +12,7 @@ namespace DuckHunt
     class Crosshair : GameObject
     {
         private Vector2 spawnOffset;
-        private Texture2D laser;
+        private Texture2D bullet;
         private bool canFire;
         private int fireTrigger;
         private SoundEffectInstance gunShot;
@@ -29,21 +29,16 @@ namespace DuckHunt
 
         public override void LoadContent(ContentManager content)
         {
-            sprites = new Texture2D[1];
-
-            for (int i = 0; i < sprites.Length; i++)
-            {
-                sprites[i] = content.Load<Texture2D>("1Cursor");
-            }
-
-            sprite = sprites[0];
+          
+            sprite = content.Load<Texture2D>("1Cursor");
+            
             //draws collision box Crosshair
             this.position = new Vector2(GameWorld.GetScreensize().X / 2, GameWorld.GetScreensize().Y - sprite.Height / 2);
             this.origin = new Vector2(sprite.Height / 2, sprite.Width / 2);
             this.offset.X = (-sprite.Width / 2);
             this.offset.Y = -sprite.Height / 2;
 
-            laser = content.Load<Texture2D>("laserGreen03");
+            bullet = content.Load<Texture2D>("laserGreen03");
 
             gunShot = content.Load<SoundEffect>("Bang").CreateInstance();
         }
@@ -72,7 +67,7 @@ namespace DuckHunt
             if (newState.LeftButton == ButtonState.Released && oldState.LeftButton == ButtonState.Pressed)
             {
                canFire = false;
-                GameWorld.Instantiate(new Bullet(laser, new Vector2(position.X + spawnOffset.X, position.Y + spawnOffset.Y)));
+                GameWorld.Instantiate(new Bullet(bullet, new Vector2(position.X + spawnOffset.X, position.Y + spawnOffset.Y)));
                 gunShot.Play();
             }
             oldState = newState;
