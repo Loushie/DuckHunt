@@ -29,7 +29,7 @@ namespace DuckHunt
         private static Vector2 screensize;
         
         private Texture2D collisionTexture;
-        private SoundEffectInstance gunShot;
+        
 
 
         public static Vector2 GetScreensize()
@@ -84,14 +84,12 @@ namespace DuckHunt
             sprite = Content.Load<Texture2D>("Riffle");
             spritePosition = new Vector2(350, 500);
 
-            gunShot = Content.Load<SoundEffect>("Bang").CreateInstance();
             
 
             
 
             // TODO: use this.Content to load your game content here
 
-            //cursorTex = Content.Load<Texture2D>("Cursor");
 
             collisionTexture = Content.Load<Texture2D>("CollisionTexture");
 
@@ -99,7 +97,7 @@ namespace DuckHunt
             {
                 go.LoadContent(this.Content);
             }
-
+            
 
         }
 
@@ -131,13 +129,9 @@ namespace DuckHunt
             spriteOrigin = new Vector2(spriteRectangle.Width / 2, spriteRectangle.Height / 2);
             */
             // TODO: Add your update logic here
-            MouseState mouseState = Mouse.GetState();
 
-            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
-            {
-                gunShot.Play();
-            }
             
+
 
             gameObjects.AddRange(newObjects);
             newObjects.Clear();

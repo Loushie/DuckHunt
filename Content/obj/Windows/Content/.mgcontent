@@ -4,18 +4,18 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/1Cursor.png</File>
-    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/2dField.jpg</File>
-    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Bang.wav</File>
-    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/CollisionTexture.png</File>
-    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/DeathMoan.wav</File>
-    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/laserGreen03.png</File>
-    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/Riffle.png</File>
-    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/scoreFont.spritefont</File>
-    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/TargetBlue.png</File>
-    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/TargetGreen.png</File>
-    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/TargetOrange.png</File>
-    <File>C:/Users/lau/Desktop/git/DuckHunt/Content/TargetRed.png</File>
+    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/1Cursor.png</File>
+    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/2dField.jpg</File>
+    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/Bang.wav</File>
+    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/CollisionTexture.png</File>
+    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/DeathMoan.wav</File>
+    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/laserGreen03.png</File>
+    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/Riffle.png</File>
+    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/scoreFont.spritefont</File>
+    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/TargetBlue.png</File>
+    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/TargetGreen.png</File>
+    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/TargetOrange.png</File>
+    <File>C:/Users/samia/OneDrive/1 år/repos/DuckHunt/Content/TargetRed.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
