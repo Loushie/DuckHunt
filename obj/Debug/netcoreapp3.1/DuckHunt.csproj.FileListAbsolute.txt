@@ -199,3 +199,8 @@ C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetBlue.xnb
 C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetGreen.xnb
 C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetOrange.xnb
 C:\Users\lau\Desktop\git\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetRed.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\2dField.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetBlue.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetGreen.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetOrange.xnb
+C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetRed.xnb

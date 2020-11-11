@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -14,6 +15,9 @@ namespace DuckHunt
         private Texture2D laser;
         private bool canFire;
         private int fireTrigger;
+        private SoundEffectInstance gunShot;
+        private MouseState oldState;
+        private MouseState newState;
 
         public Crosshair()
         {
@@ -40,6 +44,8 @@ namespace DuckHunt
             this.offset.Y = -sprite.Height / 2;
 
             laser = content.Load<Texture2D>("laserGreen03");
+
+            gunShot = content.Load<SoundEffect>("Bang").CreateInstance();
         }
 
         public override void Update(GameTime gametime)
@@ -47,6 +53,7 @@ namespace DuckHunt
             MouseState mouseState = Mouse.GetState();
             position.X = mouseState.X;
             position.Y = mouseState.Y;
+
 
             HandleInput();
             Move(gametime);
@@ -60,23 +67,27 @@ namespace DuckHunt
         {
             velocity = Vector2.Zero;
             MouseState state = Mouse.GetState();
-
+            MouseState newState = Mouse.GetState();
             //shootfunction
 
-            if (state.LeftButton == ButtonState.Pressed & canFire)
+            if (newState.LeftButton == ButtonState.Released && oldState.LeftButton == ButtonState.Pressed)
             {
                canFire = false;
                 GameWorld.Instantiate(new Bullet(laser, new Vector2(position.X + spawnOffset.X, position.Y + spawnOffset.Y)));
+                gunShot.Play();
             }
+            oldState = newState;
             //Firespeed cooldown
-            if (!canFire && fireTrigger < 25)
+            if (!canFire && fireTrigger < 0)
             {
                 fireTrigger++;
+                
             }
             else
             {
                 canFire = true;
                 fireTrigger = 0;
+                
             }
 
             if (velocity != Vector2.Zero)

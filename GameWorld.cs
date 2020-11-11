@@ -29,7 +29,7 @@ namespace DuckHunt
         private static Vector2 screensize;
         
         private Texture2D collisionTexture;
-        private SoundEffectInstance gunShot;
+        
 
 
         public static Vector2 GetScreensize()
@@ -84,14 +84,12 @@ namespace DuckHunt
             sprite = Content.Load<Texture2D>("Riffle");
             spritePosition = new Vector2(350, 500);
 
-            gunShot = Content.Load<SoundEffect>("Bang").CreateInstance();
             
 
             
 
             // TODO: use this.Content to load your game content here
 
-            //cursorTex = Content.Load<Texture2D>("Cursor");
 
             collisionTexture = Content.Load<Texture2D>("CollisionTexture");
 
@@ -99,7 +97,7 @@ namespace DuckHunt
             {
                 go.LoadContent(this.Content);
             }
-
+            
 
         }
 
@@ -131,14 +129,14 @@ namespace DuckHunt
             spriteOrigin = new Vector2(spriteRectangle.Width / 2, spriteRectangle.Height / 2);
             */
             // TODO: Add your update logic here
+<<<<<<< HEAD
             MouseState mouseState = Mouse.GetState();
             KeyboardState state = Keyboard.GetState();
+=======
+>>>>>>> 0dc3312c1616d2639deb66c4b962b1360e3fa271
 
-            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
-            {
-                gunShot.Play();
-            }
             
+
 
             gameObjects.AddRange(newObjects);
             newObjects.Clear();
@@ -180,16 +178,18 @@ namespace DuckHunt
             spriteBatch.End();
 
             spriteBatch.Begin(SpriteSortMode.BackToFront);
-
-            spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
-            spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
             foreach (GameObject go in gameObjects)
             {
                 go.Draw(spriteBatch);
 
+#if DEBUG
                 DrawCollisionBox(go);
-
+#endif
             }
+
+            spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
+            spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
+            
 
             spriteBatch.End();
 
