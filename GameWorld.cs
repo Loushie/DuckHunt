@@ -170,9 +170,6 @@ namespace DuckHunt
             spriteBatch.End();
 
             spriteBatch.Begin(SpriteSortMode.BackToFront);
-
-            spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
-            spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
             foreach (GameObject go in gameObjects)
             {
                 go.Draw(spriteBatch);
@@ -180,6 +177,10 @@ namespace DuckHunt
                 DrawCollisionBox(go);
 
             }
+
+            spriteBatch.Draw(sprite, spritePosition, null, Color.White, rotation, Vector2.Zero, 0.1f, SpriteEffects.None, 0f);
+            spriteBatch.DrawString(scoreFont, "Score: " + score.ToString(), scorePosition, Color.White);
+            
 
             spriteBatch.End();
 
