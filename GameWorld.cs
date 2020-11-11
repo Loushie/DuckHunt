@@ -132,6 +132,7 @@ namespace DuckHunt
             */
             // TODO: Add your update logic here
             MouseState mouseState = Mouse.GetState();
+            KeyboardState state = Keyboard.GetState();
 
             if (Mouse.GetState().LeftButton == ButtonState.Pressed)
             {
@@ -159,7 +160,10 @@ namespace DuckHunt
             }
             deleteObjects.Clear();
 
-
+            if (state.IsKeyDown(Keys.Enter) && score > 1)
+            {
+                Initialize();
+            }
 
             base.Update(gameTime);
         }
