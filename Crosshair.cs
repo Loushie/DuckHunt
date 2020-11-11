@@ -57,7 +57,6 @@ namespace DuckHunt
 
             HandleInput();
             Move(gametime);
-            Animate(gametime);
         }
 
 

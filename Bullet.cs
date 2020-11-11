@@ -8,7 +8,7 @@ namespace DuckHunt
     class Bullet : GameObject
     {
 
-
+        
         public Bullet(Texture2D sprite, Vector2 position)
         {
             this.sprite = sprite;

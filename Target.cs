@@ -29,7 +29,7 @@ namespace DuckHunt
             
 
             sprites = new Texture2D[5];
-            //The 4 sprites
+            //The 4 sprites + gameover button sprite (sprites[4])
             sprites[0] = content.Load<Texture2D>("TargetGreen");
             sprites[1] = content.Load<Texture2D>("TargetBlue");
             sprites[2] = content.Load<Texture2D>("TargetRed");
@@ -75,6 +75,7 @@ namespace DuckHunt
                 position.Y = random.Next(30, 350);
                 position.X = 0;
             }
+            //if >5 targets go out of bounds, the game ends
             else
             {
                 int index = random.Next(5, 5);
@@ -84,11 +85,7 @@ namespace DuckHunt
                 position.X = 150;
             }
             
-
             velocity = new Vector2(1, 0);
-            
-            
-           
         }
 
         public override void OnCollision(GameObject other)

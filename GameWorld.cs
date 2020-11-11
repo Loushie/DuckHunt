@@ -31,16 +31,12 @@ namespace DuckHunt
         private Texture2D collisionTexture;
         
 
-
+        //gives us the size of the screen to use for other methods
         public static Vector2 GetScreensize()
         {
             return screensize;
         }
 
-        public static void SetScreensize(Vector2 value)
-        {
-            screensize = value;
-        }
 
         public static Vector2 Screensize { get; internal set; }
 
@@ -114,28 +110,11 @@ namespace DuckHunt
 
             rotation = (float)Math.Atan2(distance.Y, distance.X);
 
-            // ckeck to see if target is hit
-
-            /*
-             * 
-             * Vector2 direction = spritePosition - spriteOrigin;
-            direction.Normalize();
-            float rotationInRadians = (float)Math.Atan2((double)direction.Y,
-                                         (double)direction.X) + MathHelper.PiOver2;
-
-
-             spriteRectangle = new Rectangle((int)spritePosition.X, (int)spritePosition.Y, sprite.Width, sprite.Height);
-            spritePosition = spriteVelocity + spritePosition;
-            spriteOrigin = new Vector2(spriteRectangle.Width / 2, spriteRectangle.Height / 2);
-            */
             // TODO: Add your update logic here
 
+            //lets us use the keyboard and mouse as inputs
             MouseState mouseState = Mouse.GetState();
             KeyboardState state = Keyboard.GetState();
-
-
-            
-
 
             gameObjects.AddRange(newObjects);
             newObjects.Clear();
@@ -171,7 +150,7 @@ namespace DuckHunt
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
+            //draws the background in a seperate spritebatch to make sure it is the first thing to me drawn
             spriteBatch.Begin();
             spriteBatch.Draw(backgroundTexture, new Vector2(0, 0), Color.White);
             spriteBatch.End();
@@ -213,11 +192,13 @@ namespace DuckHunt
             spriteBatch.Draw(collisionTexture, leftLine, Color.Red);
         }
 
+        //creates a gameobject
         public static void Instantiate(GameObject go)
         {
             newObjects.Add(go);
         }
 
+        //deletes a gameobject
         public static void Destroy(GameObject go)
         {
             deleteObjects.Add(go);
