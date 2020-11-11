@@ -35,7 +35,7 @@ namespace DuckHunt
             sprites[3] = content.Load<Texture2D>("TargetOrange");
 
             death = content.Load<SoundEffect>("DeathMoan").CreateInstance();
-            death.Play();
+            
 
             Respawn();
 

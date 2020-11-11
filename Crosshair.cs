@@ -56,7 +56,7 @@ namespace DuckHunt
 
 
 
-        public void HandleInput()
+        private void HandleInput()
         {
             velocity = Vector2.Zero;
             MouseState state = Mouse.GetState();
@@ -88,11 +88,7 @@ namespace DuckHunt
 
         public override void OnCollision(GameObject other)
         {
-            if (other is Target)
-            {
-                
-                
-            }
+            
         }
 
     }

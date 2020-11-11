@@ -14,18 +14,14 @@ namespace DuckHunt
         protected Texture2D sprite;
         protected float fps;
         protected Vector2 origin;
-        private float timeElapsed;
-        private int currentIndex;
         protected float speed;
         protected Vector2 velocity;
         protected Vector2 offset;
         protected Color color;
+        private float timeElapsed;
+        private int currentIndex;
 
-        public Color GetColor
-        {
-            get { return color; }
-            set { color = value; }
-        }
+
         public Rectangle Collision
         {
             get

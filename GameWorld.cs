@@ -16,6 +16,8 @@ namespace DuckHunt
         private Texture2D sprite;
         private Texture2D backgroundTexture;
         private List<GameObject> gameObjects;
+        private static List<GameObject> newObjects;
+        private static List<GameObject> deleteObjects;
         private Vector2 distance;
         public Vector2 spritePosition;
         private float rotation;
@@ -25,10 +27,9 @@ namespace DuckHunt
         private SpriteFont scoreFont;
         
         private static Vector2 screensize;
-        private static List<GameObject> newObjects;
-        private static List<GameObject> deleteObjects;
+        
         private Texture2D collisionTexture;
-        private SoundEffectInstance gunShoot;
+        private SoundEffectInstance gunShot;
 
 
         public static Vector2 GetScreensize()
@@ -83,8 +84,8 @@ namespace DuckHunt
             sprite = Content.Load<Texture2D>("Riffle");
             spritePosition = new Vector2(350, 500);
 
-            gunShoot = Content.Load<SoundEffect>("Bang").CreateInstance();
-            gunShoot.Play();
+            gunShot = Content.Load<SoundEffect>("Bang").CreateInstance();
+            
 
             
 
@@ -134,7 +135,7 @@ namespace DuckHunt
 
             if (Mouse.GetState().LeftButton == ButtonState.Pressed)
             {
-                gunShoot.Play();
+                gunShot.Play();
             }
             
 
