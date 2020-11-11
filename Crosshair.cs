@@ -17,7 +17,6 @@ namespace DuckHunt
         private int fireTrigger;
         private SoundEffectInstance gunShot;
         private MouseState oldState;
-        private MouseState newState;
 
         public Crosshair()
         {
@@ -65,7 +64,7 @@ namespace DuckHunt
         private void HandleInput()
         {
             velocity = Vector2.Zero;
-            MouseState state = Mouse.GetState();
+            //MouseState state = Mouse.GetState();
             MouseState newState = Mouse.GetState();
             //shootfunction
 

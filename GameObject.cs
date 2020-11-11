@@ -18,9 +18,6 @@ namespace DuckHunt
         protected Vector2 velocity;
         protected Vector2 offset;
         protected Color color;
-        private float timeElapsed;
-        private int currentIndex;
-
 
         public Rectangle Collision
         {

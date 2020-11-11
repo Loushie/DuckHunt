@@ -2,10 +2,7 @@
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using System;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 
 namespace DuckHunt
 {
@@ -26,8 +23,6 @@ namespace DuckHunt
         public override void LoadContent(ContentManager content)
         {
 
-            
-
             sprites = new Texture2D[5];
             //The 4 sprites + gameover button sprite (sprites[4])
             sprites[0] = content.Load<Texture2D>("TargetGreen");
@@ -37,7 +32,6 @@ namespace DuckHunt
             sprites[4] = content.Load<Texture2D>("RestartButton");
 
             death = content.Load<SoundEffect>("DeathMoan").CreateInstance();
-
 
             Respawn();
 
@@ -60,7 +54,6 @@ namespace DuckHunt
                     Respawn();
                 }
             }
-            
         }
 
         public void Respawn()
@@ -78,13 +71,12 @@ namespace DuckHunt
             //if >5 targets go out of bounds, the game ends
             else
             {
-                int index = random.Next(5, 5);
                 sprite = sprites[4];
                 speed = 0;
                 position.Y = 200;
                 position.X = 150;
             }
-            
+            //Makes the sprite move from right to left on the x-axis
             velocity = new Vector2(1, 0);
         }
 
@@ -101,10 +93,6 @@ namespace DuckHunt
                 Respawn();
             }
         }
-
-        
-
-
 
     }
 
