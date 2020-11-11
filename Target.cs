@@ -25,17 +25,19 @@ namespace DuckHunt
 
         public override void LoadContent(ContentManager content)
         {
-                      
+
             
-            sprites = new Texture2D[4];
+
+            sprites = new Texture2D[5];
             //The 4 sprites
             sprites[0] = content.Load<Texture2D>("TargetGreen");
             sprites[1] = content.Load<Texture2D>("TargetBlue");
             sprites[2] = content.Load<Texture2D>("TargetRed");
             sprites[3] = content.Load<Texture2D>("TargetOrange");
+            sprites[4] = content.Load<Texture2D>("RestartButton");
 
             death = content.Load<SoundEffect>("DeathMoan").CreateInstance();
-            
+
 
             Respawn();
 
@@ -53,23 +55,40 @@ namespace DuckHunt
                 {
                     Respawn();
                 }
-                
+                else
+                {
+                    Respawn();
+                }
             }
             
         }
 
         public void Respawn()
         {
-            int index = random.Next(0, 4);
-            sprite = sprites[index];
+            if (outOfBounds < 5)
+            {
+                int index = random.Next(0, 4);
+                sprite = sprites[index];
+                //random speed from left to right
+                speed = random.Next(50, 300) + Speed;
+                //spawn positions on y axis
+                position.Y = random.Next(30, 350);
+                position.X = 0;
+            }
+            else
+            {
+                int index = random.Next(5, 5);
+                sprite = sprites[4];
+                speed = 0;
+                position.Y = 200;
+                position.X = 150;
+            }
+            
 
             velocity = new Vector2(1, 0);
-            //random speed from left to right
-            speed = random.Next(50, 300) + Speed;
-            //spawn positions on y axis
-            position.Y = random.Next(30, 350);
-            position.X = 0;
-
+            
+            
+           
         }
 
         public override void OnCollision(GameObject other)

@@ -204,3 +204,4 @@ C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\Tar
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetGreen.xnb
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetOrange.xnb
 C:\Users\samia\OneDrive\1 år\repos\DuckHunt\bin\Debug\netcoreapp3.1\Content\TargetRed.xnb
+C:\Users\olese\Documents\GitHub\DuckHunt\bin\Debug\netcoreapp3.1\Content\RestartButton.xnb

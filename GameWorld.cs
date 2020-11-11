@@ -129,11 +129,10 @@ namespace DuckHunt
             spriteOrigin = new Vector2(spriteRectangle.Width / 2, spriteRectangle.Height / 2);
             */
             // TODO: Add your update logic here
-<<<<<<< HEAD
+
             MouseState mouseState = Mouse.GetState();
             KeyboardState state = Keyboard.GetState();
-=======
->>>>>>> 0dc3312c1616d2639deb66c4b962b1360e3fa271
+
 
             
 

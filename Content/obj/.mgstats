@@ -1,13 +1,14 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/1Cursor.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/1Cursor.xnb","TextureProcessor","Texture2DContent",184,4181,0,1497088
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/2dField.jpg","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/2dField.xnb","TextureProcessor","Texture2DContent",121044,3201685,0,0787343
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/Bang.wav","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Bang.xnb","SoundEffectProcessor","SoundEffectContent",73772,73833,0,6547362
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/CollisionTexture.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/CollisionTexture.xnb","TextureProcessor","Texture2DContent",2804,485,0,0064925
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/DeathMoan.wav","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/DeathMoan.xnb","SoundEffectProcessor","SoundEffectContent",88108,88169,0,6484252
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/laserGreen03.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/laserGreen03.xnb","TextureProcessor","Texture2DContent",284,2137,0,006708
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/Riffle.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Riffle.xnb","TextureProcessor","Texture2DContent",102191,3276885,0,0863747
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/scoreFont.spritefont","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/scoreFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0,0877253
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/TargetBlue.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/TargetBlue.xnb","TextureProcessor","Texture2DContent",3558,18581,0,0098183
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/TargetGreen.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/TargetGreen.xnb","TextureProcessor","Texture2DContent",3772,18581,0,0128203
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/TargetOrange.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/TargetOrange.xnb","TextureProcessor","Texture2DContent",3528,18581,0,013203
-"C:/Users/olese/Documents/GitHub/DuckHunt/Content/TargetRed.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/TargetRed.xnb","TextureProcessor","Texture2DContent",3600,18581,0,0140486
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/1Cursor.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/1Cursor.xnb","TextureProcessor","Texture2DContent",184,4181,0,1180405
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/2dField.jpg","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/2dField.xnb","TextureProcessor","Texture2DContent",121044,3201685,0,0778315
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/Bang.wav","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Bang.xnb","SoundEffectProcessor","SoundEffectContent",73772,73833,0,7199165
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/CollisionTexture.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/CollisionTexture.xnb","TextureProcessor","Texture2DContent",2804,485,0,0126202
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/DeathMoan.wav","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/DeathMoan.xnb","SoundEffectProcessor","SoundEffectContent",88108,88169,0,6830908
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/laserGreen03.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/laserGreen03.xnb","TextureProcessor","Texture2DContent",284,2137,0,0113465
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/RestartButton.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/RestartButton.xnb","TextureProcessor","Texture2DContent",5402,184085,0,0223575
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/Riffle.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/Riffle.xnb","TextureProcessor","Texture2DContent",102191,3276885,0,0862411
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/scoreFont.spritefont","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/scoreFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0,0880334
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/TargetBlue.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/TargetBlue.xnb","TextureProcessor","Texture2DContent",5263,25685,0,0118546
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/TargetGreen.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/TargetGreen.xnb","TextureProcessor","Texture2DContent",3772,18581,0,0104815
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/TargetOrange.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/TargetOrange.xnb","TextureProcessor","Texture2DContent",2438,10085,0,0091962
+"C:/Users/olese/Documents/GitHub/DuckHunt/Content/TargetRed.png","C:/Users/olese/Documents/GitHub/DuckHunt/Content/bin/TargetRed.xnb","TextureProcessor","Texture2DContent",8626,61589,0,0132328
