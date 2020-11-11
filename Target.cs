@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace DuckHunt
 {
@@ -12,9 +13,8 @@ namespace DuckHunt
     {
         private Random random;
         public int outOfBounds;
+        public int Speed;
         public SoundEffectInstance death;
-        
-        //private SoundEffectInstance effect;
 
         public Target()
         {
@@ -26,9 +26,9 @@ namespace DuckHunt
         public override void LoadContent(ContentManager content)
         {
                       
-
+            
             sprites = new Texture2D[4];
-
+            //The 4 sprites
             sprites[0] = content.Load<Texture2D>("TargetGreen");
             sprites[1] = content.Load<Texture2D>("TargetBlue");
             sprites[2] = content.Load<Texture2D>("TargetRed");
@@ -47,9 +47,15 @@ namespace DuckHunt
 
             if (position.X > GameWorld.GetScreensize().X)
             {
-                outOfBounds += 1;
-                Respawn();
+                outOfBounds ++;
+                //Target respawns until it reaches 5 targets that went out of bounds
+                if (outOfBounds < 5)
+                {
+                    Respawn();
+                }
+                
             }
+            
         }
 
         public void Respawn()
@@ -59,21 +65,23 @@ namespace DuckHunt
 
             velocity = new Vector2(1, 0);
             //random speed from left to right
-            speed = random.Next(100, 500);
+            speed = 100 + Speed;
             //spawn positions on y axis
             position.Y = random.Next(30, 250);
             position.X = 0;
 
         }
 
-        
-
         public override void OnCollision(GameObject other)
         {
+            //Target gets destroyed if it collides with bullet
             if (other is Bullet)
             {
                 GameWorld.Destroy(other);
                 death.Play();
+                // adds 10 to speed if Target is destroyed by Bullet
+                Speed += 10;
+                //Target respawns if hit by Bullet
                 Respawn();
             }
         }
