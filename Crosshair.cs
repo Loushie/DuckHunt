@@ -29,14 +29,9 @@ namespace DuckHunt
 
         public override void LoadContent(ContentManager content)
         {
-            sprites = new Texture2D[1];
-
-            for (int i = 0; i < sprites.Length; i++)
-            {
-                sprites[i] = content.Load<Texture2D>("1Cursor");
-            }
-
-            sprite = sprites[0];
+          
+            sprite = content.Load<Texture2D>("1Cursor");
+            
             //draws collision box Crosshair
             this.position = new Vector2(GameWorld.GetScreensize().X / 2, GameWorld.GetScreensize().Y - sprite.Height / 2);
             this.origin = new Vector2(sprite.Height / 2, sprite.Width / 2);
@@ -57,7 +52,6 @@ namespace DuckHunt
 
             HandleInput();
             Move(gametime);
-            Animate(gametime);
         }
 
 

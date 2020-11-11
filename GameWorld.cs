@@ -37,11 +37,6 @@ namespace DuckHunt
             return screensize;
         }
 
-        public static void SetScreensize(Vector2 value)
-        {
-            screensize = value;
-        }
-
         public static Vector2 Screensize { get; internal set; }
 
         public GameWorld()

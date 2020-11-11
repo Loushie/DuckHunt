@@ -47,20 +47,6 @@ namespace DuckHunt
 
         public abstract void Update(GameTime gametime);
 
-
-        protected void Animate(GameTime gametime)
-        {
-            timeElapsed += (float)gametime.ElapsedGameTime.TotalSeconds;
-
-            currentIndex = (int)(timeElapsed * fps);
-            sprite = sprites[currentIndex];
-
-            if (currentIndex >= sprites.Length - 1)
-            {
-                timeElapsed = 0;
-                currentIndex = 0;
-            }
-        }
         protected void Move(GameTime gameTime)
         {
             float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
