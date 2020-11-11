@@ -155,7 +155,7 @@ namespace DuckHunt
             foreach (GameObject go in deleteObjects)
             {
                 gameObjects.Remove(go);
-                score++;
+                score+= 10;
             }
             deleteObjects.Clear();
 
