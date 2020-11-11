@@ -12,7 +12,7 @@ namespace DuckHunt
     class Crosshair : GameObject
     {
         private Vector2 spawnOffset;
-        private Texture2D laser;
+        private Texture2D bullet;
         private bool canFire;
         private int fireTrigger;
         private SoundEffectInstance gunShot;
@@ -38,7 +38,7 @@ namespace DuckHunt
             this.offset.X = (-sprite.Width / 2);
             this.offset.Y = -sprite.Height / 2;
 
-            laser = content.Load<Texture2D>("laserGreen03");
+            bullet = content.Load<Texture2D>("laserGreen03");
 
             gunShot = content.Load<SoundEffect>("Bang").CreateInstance();
         }
@@ -67,7 +67,7 @@ namespace DuckHunt
             if (newState.LeftButton == ButtonState.Released && oldState.LeftButton == ButtonState.Pressed)
             {
                canFire = false;
-                GameWorld.Instantiate(new Bullet(laser, new Vector2(position.X + spawnOffset.X, position.Y + spawnOffset.Y)));
+                GameWorld.Instantiate(new Bullet(bullet, new Vector2(position.X + spawnOffset.X, position.Y + spawnOffset.Y)));
                 gunShot.Play();
             }
             oldState = newState;
